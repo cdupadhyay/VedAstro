@@ -1,8 +1,8 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace VedAstro.Library
 {
@@ -522,6 +522,94 @@ namespace VedAstro.Library
                 }
             }
             return ranges;
+        }
+
+        /// <summary>
+        /// Gets the current dasa, bhukti & antaram at inputed time based on the specified dasa system
+        /// </summary>
+        public static Dasas CurrentDasa8Levels(Time birthTime, Time currentTime, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.CurrentDasa8Levels(birthTime, currentTime, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the next planet in the dasa sequence for the specified dasa system
+        /// </summary>
+        public static PlanetName NextDasaPlanet(PlanetName planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.NextDasaPlanet(planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full Dasa years for a given planet in the specified dasa system
+        /// </summary>
+        public static double PD1PlanetFullYears(PlanetName planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD1PlanetFullYears(planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full years of a bhukti planet in a dasa for the specified dasa system
+        /// </summary>
+        public static double PD2PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD2PlanetFullYears(pd1Planet, pd2Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full years of an antaram planet in a bhukti of a dasa for the specified dasa system
+        /// </summary>
+        public static double PD3PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD3PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full time of a Sukshma planet for the specified dasa system
+        /// </summary>
+        public static double PD4PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, PlanetName pd4Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD4PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, pd4Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full time of a Prana planet for the specified dasa system
+        /// </summary>
+        public static double PD5PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, PlanetName pd4Planet, PlanetName pd5Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD5PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, pd4Planet, pd5Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full time of an Avi Prana planet for the specified dasa system
+        /// </summary>
+        public static double PD6PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, PlanetName pd4Planet, PlanetName pd5Planet, PlanetName pd6Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD6PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, pd4Planet, pd5Planet, pd6Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full time of a Viprana planet for the specified dasa system
+        /// </summary>
+        public static double PD7PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, PlanetName pd4Planet, PlanetName pd5Planet, PlanetName pd6Planet, PlanetName pd7Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD7PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, pd4Planet, pd5Planet, pd6Planet, pd7Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the full time of a Viprana planet for the specified dasa system
+        /// </summary>
+        public static double PD8PlanetFullYears(PlanetName pd1Planet, PlanetName pd2Planet, PlanetName pd3Planet, PlanetName pd4Planet, PlanetName pd5Planet, PlanetName pd6Planet, PlanetName pd7Planet, PlanetName pd8Planet, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.PD8PlanetFullYears(pd1Planet, pd2Planet, pd3Planet, pd4Planet, pd5Planet, pd6Planet, pd7Planet, pd8Planet, dasaType);
+        }
+
+        /// <summary>
+        /// Gets the dasa planet for a given constellation in the specified dasa system
+        /// </summary>
+        public static PlanetName ConstellationDasaPlanet(ConstellationName constellationName, DasaType dasaType = DasaType.Vimshottari)
+        {
+            return DasaManager.ConstellationDasaPlanet(constellationName, dasaType);
         }
 
     }
