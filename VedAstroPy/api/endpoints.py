@@ -83,6 +83,11 @@ async def calculate_dasa_at_range(
     ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
     levels: int = 3,    # Range: 1-7
 ):
+    print(f"DEBUG: Received parameters:")
+    print(f"location: {location}")
+    print(f"birth_time: {birth_time}")
+    print(f"start_time: {start_time}")
+    print(f"end_time: {end_time}")
     """Calculate dasa periods between start and end time for a person.
 
     Args:
@@ -104,12 +109,18 @@ async def calculate_dasa_at_range(
         Dictionary containing dasa periods or error message if location not found
     """
     try:
-        # Get birth location coordinates
-        birth_coords = get_coords(location)
-        if birth_coords is None:
-            return {"error": f"Location not found: {location}"}
-        birth_lat, birth_lon = birth_coords
-        birth_location = GeoLocation(location, birth_lat, birth_lon)
+        try:
+            print("DEBUG: Getting birth coordinates")
+            # Get birth location coordinates
+            birth_coords = get_coords(location)
+            if birth_coords is None:
+                return {"error": f"Location not found: {location}"}
+            birth_lat, birth_lon = birth_coords
+            print(f"DEBUG: Birth coordinates found: lat={birth_lat}, lon={birth_lon}")
+            birth_location = GeoLocation(location, birth_lat, birth_lon)
+        except Exception as e:
+            print(f"DEBUG: Error getting coordinates: {str(e)}")
+            raise
 
         # Handle start location
         if start_location:
@@ -167,9 +178,12 @@ async def calculate_dasa_at_range(
 
         # Validate all time inputs
         for time_str, desc in [(birth_time, "birth time"), (start_time, "start time"), (end_time, "end time")]:
+            print(f"DEBUG: Validating {desc}: {time_str}")
             error = validate_time_format(time_str)
             if error:
+                print(f"DEBUG: Time validation error for {desc}: {error}")
                 return error
+            print(f"DEBUG: {desc} validated successfully")
 
         birth = Time(birth_time, birth_location)
         start = Time(start_time, start_location) 
