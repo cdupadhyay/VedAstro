@@ -18,9 +18,9 @@ def get_coords(location: str) -> tuple[float, float]:
         location_data = geolocator.geocode(location, timeout=10)
         if location_data:
             return (location_data.latitude, location_data.longitude)
-        return (0.0, 0.0)  # Return default if location not found
+        return None  # Return None if location not found
     except (GeocoderTimedOut, GeocoderUnavailable):
-        return (0.0, 0.0)  # Return default coordinates on error
+        return None  # Return None on geocoding error
 
 @app.post("/api/Calculate/AddPerson")
 async def add_person(
@@ -86,17 +86,48 @@ async def calculate_dasa_at_range(
     """Calculate dasa periods between start and end time for a person.
 
     Args:
-        location: Birth location name
+        location: Birth location name in any of these formats:
+                 - City only: "London"
+                 - City, Country: "Paris, France"
+                 - City, State, Country: "Ajmer, Rajasthan, India"
+                 - City with state/province: "New Delhi, India"
         birth_time: Birth date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30")
         start_time: Start date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30") 
         end_time: End date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/2024 +05:30")
+        start_location: Optional location for start time, uses same format as birth location
+        end_location: Optional location for end time, uses same format as birth location
+        dasa_system: Dasa system to use, either "Vimshottari" or "Ashtottari"
+        ayanamsa: Ayanamsa to use, one of "Raman", "Lahiri", or "KP"
+        levels: Number of dasa levels to calculate (1-7)
+
+    Returns:
+        Dictionary containing dasa periods or error message if location not found
     """
     try:
-        birth_lat, birth_lon = get_coords(location)
+        # Get birth location coordinates
+        birth_coords = get_coords(location)
+        if birth_coords is None:
+            return {"error": f"Location not found: {location}"}
+        birth_lat, birth_lon = birth_coords
         birth_location = GeoLocation(location, birth_lat, birth_lon)
 
-        start_location = GeoLocation(start_location, *get_coords(start_location)) if start_location else birth_location
-        end_location = GeoLocation(end_location, *get_coords(end_location)) if end_location else birth_location
+        # Handle start location
+        if start_location:
+            start_coords = get_coords(start_location)
+            if start_coords is None:
+                return {"error": f"Start location not found: {start_location}"}
+            start_location = GeoLocation(start_location, *start_coords)
+        else:
+            start_location = birth_location
+
+        # Handle end location
+        if end_location:
+            end_coords = get_coords(end_location)
+            if end_coords is None:
+                return {"error": f"End location not found: {end_location}"}
+            end_location = GeoLocation(end_location, *end_coords) 
+        else:
+            end_location = birth_location
 
         birth = Time(birth_time, birth_location)
         start = Time(start_time, start_location) 
