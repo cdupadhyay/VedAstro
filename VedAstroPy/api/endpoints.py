@@ -79,9 +79,9 @@ async def calculate_dasa_at_range(
     
     Args:
         location: Birth location name
-        birth_time: Birth date and time in format "HH:MM DD/MM/YYYY"
-        start_time: Start date and time in format "HH:MM DD/MM/YYYY"
-        end_time: End date and time in format "HH:MM DD/MM/YYYY"
+        birth_time: Birth date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30")
+        start_time: Start date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30") 
+        end_time: End date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/2024 +05:30")
     """
     try:
         # Parse locations into GeoLocation objects
