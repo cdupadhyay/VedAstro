@@ -132,6 +132,10 @@ async def calculate_dasa_at_range(
         # Validate time format
         def validate_time_format(time_str):
             try:
+                # Convert old format (spaces and dots) to new format (slashes)
+                # Example: "14:43 17/02/1977 +05.30" -> "14:43/17/02/1977/+05:30"
+                time_str = time_str.replace(' ', '/').replace('.', ':')
+                
                 # Check if format matches HH:MM/DD/MM/YYYY/±HH:MM
                 time_parts = time_str.split('/')
                 if len(time_parts) != 5:
