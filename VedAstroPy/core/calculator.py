@@ -216,9 +216,17 @@ class Calculator:
         dasa_periods = []
 
         # Convert times to datetime for calculations
-        birth_dt = datetime.strptime(birth_time.std_time.split()[0], "%H:%M/%d/%m/%Y")
-        start_dt = datetime.strptime(start_time.std_time.split()[0], "%H:%M/%d/%m/%Y")
-        end_dt = datetime.strptime(end_time.std_time.split()[0], "%H:%M/%d/%m/%Y")
+        print(f"DEBUG Calculator: Parsing birth time: {birth_time.std_time}")
+        birth_dt = datetime.strptime(birth_time.std_time, "%H:%M/%d/%m/%Y/%z")
+        print(f"DEBUG Calculator: Parsed birth time: {birth_dt}")
+
+        print(f"DEBUG Calculator: Parsing start time: {start_time.std_time}")
+        start_dt = datetime.strptime(start_time.std_time, "%H:%M/%d/%m/%Y/%z") 
+        print(f"DEBUG Calculator: Parsed start time: {start_dt}")
+
+        print(f"DEBUG Calculator: Parsing end time: {end_time.std_time}")
+        end_dt = datetime.strptime(end_time.std_time, "%H:%M/%d/%m/%Y/%z")
+        print(f"DEBUG Calculator: Parsed end time: {end_dt}")
 
         current_dt = birth_dt
         current_lord_index = start_lord_index
