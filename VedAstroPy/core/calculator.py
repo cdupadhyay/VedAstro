@@ -148,6 +148,12 @@ class Calculator:
                               dasa_system: str = "Vimshottari", 
                               ayanamsa: str = "Raman",
                               levels: int = 3) -> Dict[str, List[Dict]]:
+        print(f"DEBUG Calculator: Starting dasa calculation with:")
+        print(f"DEBUG Calculator: birth_time={birth_time.std_time}")
+        print(f"DEBUG Calculator: start_time={start_time.std_time}")
+        print(f"DEBUG Calculator: end_time={end_time.std_time}")
+        print(f"DEBUG Calculator: dasa_system={dasa_system}")
+        print(f"DEBUG Calculator: ayanamsa={ayanamsa}")
         """Calculate dasa periods between start and end time for a person born at birth_time
         
         Args:
@@ -164,12 +170,16 @@ class Calculator:
             "Lahiri": swe.SIDM_LAHIRI,
             "KP": swe.SIDM_KRISHNAMURTI
         }
-        swe.set_sid_mode(ayanamsa_flags.get(ayanamsa, swe.SIDM_RAMAN))
+        selected_ayanamsa = ayanamsa_flags.get(ayanamsa, swe.SIDM_RAMAN)
+        print(f"DEBUG Calculator: Setting ayanamsa mode to {selected_ayanamsa}")
+        swe.set_sid_mode(selected_ayanamsa)
         
         # Calculate moon's constellation at birth
         moon_pos = Calculator.calculate_planet_positions(birth_time)['Moon']
+        print(f"DEBUG Calculator: Moon position at birth: {moon_pos}")
         nakshatra = math.floor(moon_pos / 13.333333)
         remainder = (moon_pos % 13.333333) / 13.333333
+        print(f"DEBUG Calculator: Nakshatra: {nakshatra}, Remainder: {remainder}")
 
         # Define dasa sequences and years
         dasa_systems = {
