@@ -1,0 +1,38 @@
+"Mercury": {
+        "Type": "Dasa",
+        "Start": "00:00 04/03/1957 -05:00",
+        "End": "00:00 05/04/1962 -05:00",
+        "DurationHours": 44592.0,
+        "DurationText": "5.2 years",
+        "TechnicalName": "AquariusMercuryPD1",
+        "Lord": "Mercury",
+        "ParentLord": "Empty",
+        "Description": " Aquarius - Acquisition of paraphernalia, access to good and much wealth, indulging in a pleasurely life and good fame and name. ",
+        "Nature": "Good",
+        "SubDasas": {
+          "Rahu": {
+            "Type": "Bhukti",
+            "Start": "00:00 04/03/1957 -05:00",
+            "End": "00:00 19/04/1957 -05:00",
+            "DurationHours": 1104.0,
+            "DurationText": "1.5 months",
+            "TechnicalName": "MercuryRahuPD2",
+            "Lord": "Rahu",
+            "ParentLord": "Mercury",
+            "Description": " Rahu - 2 years, 6 months, 18 days. Intercourse with servants and prostitutes, skin diseases, sufferings from hot diseases, bad company and dirty meals. change or present position, fear and danger through foreigners, disputes concerning property, failure in litigation, evil dreams. headaches, sickness and loss of appetite. wealth from friends and relatives, happiness, new earnings. ",
+            "Nature": "Bad",
+            "SubDasas": {
+              "Mars": {
+                "Type": "Antaram",
+                "Start": "00:00 04/03/1957 -05:00",
+                "End": "00:00 19/04/1957 -05:00",
+                "DurationHours": 1104.0,
+                "DurationText": "1.5 months",
+                "TechnicalName": "RahuMarsPD3",
+                "Lord": "Mars",
+                "ParentLord": "Rahu",
+                "Description": "Danger from rulers, fires or thieves and by arms, defeat in litigation, loss of money due to cousins, difficulties, sorrows, danger to the person due to malice of enemies, tendency to ease or dissolute habits, disputes and mental anxiety, combination of all possible calamities, bewilderment in every work and culpable failure of memory.",
+                "Nature": "Bad"
+              }
+            }
+          }
