@@ -253,11 +253,11 @@ class Calculator:
                     'years': years,
                 }
 
-                # Add Bhukti (level 2) if requested
+                # Add sub-levels if requested (up to 8 levels)
                 if levels >= 2:
                     bhuktis = []
                     bhukti_lord = lord
-                    bhukti_years = years / 9  # Divide main period into 9 sub-periods
+                    bhukti_years = years / 9  # Level 2
                     bhukti_start = max(current_dt, start_dt)
                     
                     for _ in range(9):
@@ -271,7 +271,7 @@ class Calculator:
                                 'years': bhukti_years
                             }
                             
-                            # Add Antaram (level 3) if requested
+                            # Level 3 (Antaram)
                             if levels >= 3:
                                 antarams = []
                                 antaram_lord = bhukti_lord
@@ -282,16 +282,141 @@ class Calculator:
                                     antaram_end = antaram_start + timedelta(days=antaram_years*365.25)
                                     
                                     if antaram_start < end_dt and antaram_end > start_dt:
-                                        antarams.append({
+                                        antaram = {
                                             'lord': antaram_lord,
                                             'start_date': antaram_start.strftime("%Y-%m-%d"),
                                             'end_date': min(antaram_end, end_dt).strftime("%Y-%m-%d"),
                                             'years': antaram_years
-                                        })
+                                        }
+                                        
+                                        # Level 4 (Sukshma)
+                                        if levels >= 4:
+                                            sukshmas = []
+                                            sukshma_lord = antaram_lord
+                                            sukshma_years = antaram_years / 9
+                                            sukshma_start = antaram_start
+                                            
+                                            for _ in range(9):
+                                                sukshma_end = sukshma_start + timedelta(days=sukshma_years*365.25)
+                                                
+                                                if sukshma_start < end_dt and sukshma_end > start_dt:
+                                                    sukshma = {
+                                                        'lord': sukshma_lord,
+                                                        'start_date': sukshma_start.strftime("%Y-%m-%d"),
+                                                        'end_date': min(sukshma_end, end_dt).strftime("%Y-%m-%d"),
+                                                        'years': sukshma_years
+                                                    }
+                                                    
+                                                    # Level 5 (Prana)
+                                                    if levels >= 5:
+                                                        pranas = []
+                                                        prana_lord = sukshma_lord
+                                                        prana_years = sukshma_years / 9
+                                                        prana_start = sukshma_start
+                                                        
+                                                        for _ in range(9):
+                                                            prana_end = prana_start + timedelta(days=prana_years*365.25)
+                                                            
+                                                            if prana_start < end_dt and prana_end > start_dt:
+                                                                prana = {
+                                                                    'lord': prana_lord,
+                                                                    'start_date': prana_start.strftime("%Y-%m-%d"),
+                                                                    'end_date': min(prana_end, end_dt).strftime("%Y-%m-%d"),
+                                                                    'years': prana_years
+                                                                }
+                                                                
+                                                                # Level 6 (Avi Prana)
+                                                                if levels >= 6:
+                                                                    avi_pranas = []
+                                                                    avi_prana_lord = prana_lord
+                                                                    avi_prana_years = prana_years / 9
+                                                                    avi_prana_start = prana_start
+                                                                    
+                                                                    for _ in range(9):
+                                                                        avi_prana_end = avi_prana_start + timedelta(days=avi_prana_years*365.25)
+                                                                        
+                                                                        if avi_prana_start < end_dt and avi_prana_end > start_dt:
+                                                                            avi_prana = {
+                                                                                'lord': avi_prana_lord,
+                                                                                'start_date': avi_prana_start.strftime("%Y-%m-%d"),
+                                                                                'end_date': min(avi_prana_end, end_dt).strftime("%Y-%m-%d"),
+                                                                                'years': avi_prana_years
+                                                                            }
+                                                                            
+                                                                            # Level 7 (Viprana)
+                                                                            if levels >= 7:
+                                                                                vipranas = []
+                                                                                viprana_lord = avi_prana_lord
+                                                                                viprana_years = avi_prana_years / 9
+                                                                                viprana_start = avi_prana_start
+                                                                                
+                                                                                for _ in range(9):
+                                                                                    viprana_end = viprana_start + timedelta(days=viprana_years*365.25)
+                                                                                    
+                                                                                    if viprana_start < end_dt and viprana_end > start_dt:
+                                                                                        viprana = {
+                                                                                            'lord': viprana_lord,
+                                                                                            'start_date': viprana_start.strftime("%Y-%m-%d"),
+                                                                                            'end_date': min(viprana_end, end_dt).strftime("%Y-%m-%d"),
+                                                                                            'years': viprana_years
+                                                                                        }
+                                                                                        
+                                                                                        # Level 8
+                                                                                        if levels >= 8:
+                                                                                            pd8s = []
+                                                                                            pd8_lord = viprana_lord
+                                                                                            pd8_years = viprana_years / 9
+                                                                                            pd8_start = viprana_start
+                                                                                            
+                                                                                            for _ in range(9):
+                                                                                                pd8_end = pd8_start + timedelta(days=pd8_years*365.25)
+                                                                                                
+                                                                                                if pd8_start < end_dt and pd8_end > start_dt:
+                                                                                                    pd8s.append({
+                                                                                                        'lord': pd8_lord,
+                                                                                                        'start_date': pd8_start.strftime("%Y-%m-%d"),
+                                                                                                        'end_date': min(pd8_end, end_dt).strftime("%Y-%m-%d"),
+                                                                                                        'years': pd8_years
+                                                                                                    })
+                                                                                                
+                                                                                                pd8_lord = dasa_sequence[(dasa_sequence.index(pd8_lord) + 1) % 9]
+                                                                                                pd8_start = pd8_end
+                                                                                            
+                                                                                            viprana['pd8s'] = pd8s
+                                                                                        
+                                                                                        vipranas.append(viprana)
+                                                                                    
+                                                                                    viprana_lord = dasa_sequence[(dasa_sequence.index(viprana_lord) + 1) % 9]
+                                                                                    viprana_start = viprana_end
+                                                                                
+                                                                                avi_prana['vipranas'] = vipranas
+                                                                            
+                                                                            avi_pranas.append(avi_prana)
+                                                                        
+                                                                        avi_prana_lord = dasa_sequence[(dasa_sequence.index(avi_prana_lord) + 1) % 9]
+                                                                        avi_prana_start = avi_prana_end
+                                                                    
+                                                                    prana['avi_pranas'] = avi_pranas
+                                                                
+                                                                pranas.append(prana)
+                                                            
+                                                            prana_lord = dasa_sequence[(dasa_sequence.index(prana_lord) + 1) % 9]
+                                                            prana_start = prana_end
+                                                        
+                                                        sukshma['pranas'] = pranas
+                                                    
+                                                    sukshmas.append(sukshma)
+                                                
+                                                sukshma_lord = dasa_sequence[(dasa_sequence.index(sukshma_lord) + 1) % 9]
+                                                sukshma_start = sukshma_end
+                                            
+                                            antaram['sukshmas'] = sukshmas
+                                        
+                                        antarams.append(antaram)
                                     
                                     antaram_lord = dasa_sequence[(dasa_sequence.index(antaram_lord) + 1) % 9]
                                     antaram_start = antaram_end
-                                    
+                                
                                 bhukti['antarams'] = antarams
                             
                             bhuktis.append(bhukti)
