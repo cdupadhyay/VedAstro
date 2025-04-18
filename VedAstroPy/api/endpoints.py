@@ -136,6 +136,13 @@ async def calculate_dasa_at_range(
                 # Example: "14:43 17/02/1977 +05.30" -> "14:43/17/02/1977/+05:30"
                 time_str = time_str.replace(' ', '/').replace('.', ':')
                 
+                # Convert UTC offset format from +HH:MM to +HH:MM
+                if " +" in time_str or " -" in time_str:
+                    time_parts = time_str.rsplit(" ", 1)
+                    base_time = time_parts[0].replace(" ", "/")
+                    offset = time_parts[1]
+                    time_str = f"{base_time}/{offset}"
+
                 # Check if format matches HH:MM/DD/MM/YYYY/±HH:MM
                 time_parts = time_str.split('/')
                 
