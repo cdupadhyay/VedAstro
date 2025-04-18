@@ -245,12 +245,63 @@ class Calculator:
             period_end = current_dt.replace(year=current_dt.year + int(years))
             print(f"DEBUG Calculator: Period for lord {lord}: {current_dt} to {period_end}")
             if period_end > start_dt:
-                dasa_periods.append({
+                # Calculate period object 
+                period = {
                     'lord': lord,
                     'start_date': max(current_dt, start_dt).strftime("%Y-%m-%d"),
                     'end_date': min(period_end, end_dt).strftime("%Y-%m-%d"),
-                    'years': years
-                })
+                    'years': years,
+                }
+
+                # Add Bhukti (level 2) if requested
+                if levels >= 2:
+                    bhuktis = []
+                    bhukti_lord = lord
+                    bhukti_years = years / 9  # Divide main period into 9 sub-periods
+                    bhukti_start = max(current_dt, start_dt)
+                    
+                    for _ in range(9):
+                        bhukti_end = bhukti_start + timedelta(days=bhukti_years*365.25)
+                        
+                        if bhukti_start < end_dt and bhukti_end > start_dt:
+                            bhukti = {
+                                'lord': bhukti_lord,
+                                'start_date': bhukti_start.strftime("%Y-%m-%d"),
+                                'end_date': min(bhukti_end, end_dt).strftime("%Y-%m-%d"),
+                                'years': bhukti_years
+                            }
+                            
+                            # Add Antaram (level 3) if requested
+                            if levels >= 3:
+                                antarams = []
+                                antaram_lord = bhukti_lord
+                                antaram_years = bhukti_years / 9
+                                antaram_start = bhukti_start
+                                
+                                for _ in range(9):
+                                    antaram_end = antaram_start + timedelta(days=antaram_years*365.25)
+                                    
+                                    if antaram_start < end_dt and antaram_end > start_dt:
+                                        antarams.append({
+                                            'lord': antaram_lord,
+                                            'start_date': antaram_start.strftime("%Y-%m-%d"),
+                                            'end_date': min(antaram_end, end_dt).strftime("%Y-%m-%d"),
+                                            'years': antaram_years
+                                        })
+                                    
+                                    antaram_lord = dasa_sequence[(dasa_sequence.index(antaram_lord) + 1) % 9]
+                                    antaram_start = antaram_end
+                                    
+                                bhukti['antarams'] = antarams
+                            
+                            bhuktis.append(bhukti)
+                            
+                        bhukti_lord = dasa_sequence[(dasa_sequence.index(bhukti_lord) + 1) % 9]
+                        bhukti_start = bhukti_end
+                        
+                    period['bhuktis'] = bhuktis
+
+                dasa_periods.append(period)
 
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % 9
