@@ -67,10 +67,10 @@ async def add_person(
 async def calculate_dasa_at_range(
     location: str,      # Birth location name
     birth_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM" 
-    start_location: str = None,  # Optional start time location
     start_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM"
-    end_location: str = None,    # Optional end time location  
     end_time: str,      # Format: "HH:MM DD/MM/YYYY +HH:MM"
+    start_location: str = None,  # Optional start time location
+    end_location: str = None,    # Optional end time location  
     dasa_system: str = "Vimshottari",  # Supported: Vimshottari, Ashtottari
     ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
     levels: int = 3,    # Range: 1-7
