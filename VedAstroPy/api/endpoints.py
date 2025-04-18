@@ -69,6 +69,9 @@ async def calculate_dasa_at_range(
     birth_time: str,  # Format: "HH:MM DD/MM/YYYY"
     start_time: str,  # Format: "HH:MM DD/MM/YYYY" 
     end_time: str,    # Format: "HH:MM DD/MM/YYYY"
+    dasa_system: str = "Vimshottari",  # Supported: Vimshottari, Ashtottari
+    ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
+    levels: int = 3,  # Range: 1-7
 ):
     """Calculate dasa periods between start and end time for a person.
     

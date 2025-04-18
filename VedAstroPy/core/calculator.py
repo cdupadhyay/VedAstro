@@ -144,19 +144,54 @@ class Calculator:
         return events
 
     @staticmethod 
-    def calculate_dasa_at_range(birth_time: Time, start_time: Time, end_time: Time) -> Dict[str, List[Dict]]:
-        """Calculate dasa periods between start and end time for a person born at birth_time"""
+    def calculate_dasa_at_range(birth_time: Time, start_time: Time, end_time: Time, 
+                              dasa_system: str = "Vimshottari", 
+                              ayanamsa: str = "Raman",
+                              levels: int = 3) -> Dict[str, List[Dict]]:
+        """Calculate dasa periods between start and end time for a person born at birth_time
+        
+        Args:
+            birth_time: Birth time
+            start_time: Start time for prediction
+            end_time: End time for prediction 
+            dasa_system: Dasa system to use (Vimshottari or Ashtottari)
+            ayanamsa: Ayanamsa to use (Raman, Lahiri, KP)
+            levels: Number of dasa levels to calculate (1-7)
+        """
+        # Set ayanamsa
+        ayanamsa_flags = {
+            "Raman": swe.SIDM_RAMAN,
+            "Lahiri": swe.SIDM_LAHIRI,
+            "KP": swe.SIDM_KRISHNAMURTI
+        }
+        swe.set_sid_mode(ayanamsa_flags.get(ayanamsa, swe.SIDM_RAMAN))
+        
         # Calculate moon's constellation at birth
         moon_pos = Calculator.calculate_planet_positions(birth_time)['Moon']
         nakshatra = math.floor(moon_pos / 13.333333)
         remainder = (moon_pos % 13.333333) / 13.333333
 
-        # Define dasa sequence and years
-        dasa_sequence = ['Ketu', 'Venus', 'Sun', 'Moon', 'Mars', 
-                        'Rahu', 'Jupiter', 'Saturn', 'Mercury']
-        dasa_years = {'Ketu': 7, 'Venus': 20, 'Sun': 6, 'Moon': 10,
-                     'Mars': 7, 'Rahu': 18, 'Jupiter': 16, 'Saturn': 19,
-                     'Mercury': 17}
+        # Define dasa sequences and years
+        dasa_systems = {
+            "Vimshottari": {
+                "sequence": ['Ketu', 'Venus', 'Sun', 'Moon', 'Mars', 
+                           'Rahu', 'Jupiter', 'Saturn', 'Mercury'],
+                "years": {'Ketu': 7, 'Venus': 20, 'Sun': 6, 'Moon': 10,
+                         'Mars': 7, 'Rahu': 18, 'Jupiter': 16, 'Saturn': 19,
+                         'Mercury': 17}
+            },
+            "Ashtottari": {
+                "sequence": ['Sun', 'Moon', 'Mars', 'Rahu', 'Jupiter', 
+                           'Saturn', 'Mercury', 'Venus'],
+                "years": {'Sun': 6, 'Moon': 15, 'Mars': 8, 'Rahu': 18,
+                         'Jupiter': 19, 'Saturn': 10, 'Mercury': 17, 'Venus': 7}
+            }
+        }
+        
+        # Get selected dasa system
+        selected_system = dasa_systems.get(dasa_system, dasa_systems["Vimshottari"])
+        dasa_sequence = selected_system["sequence"]
+        dasa_years = selected_system["years"]
 
         # Find start lord index (based on birth nakshatra)
         start_lord_index = nakshatra % 9
