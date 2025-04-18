@@ -3,5 +3,5 @@
   "person_id": "2a5c9c06-521c-46ae-a041-7c57321a0146"
 }
 
-https://d9561d7a-43c9-4045-930c-53619105e82d-00-2jnwzcbpq4a3n.janeway.replit.dev/api/Calculate/DasaAtRange?location=Ajmer%2CRajasthan%2CIndia&birth_time=14%3A43%2017%2F02%2F1977%20%2B05.30&start_time=00%3A00%2001%2F01%2F2016%20-08%3A00&end_time=23%3A59%2031%2F12%2F2035%20-08%3A00&start_location=San%20Jose%2C%20California%2C%20US&end_location=San%20Jose%2C%20California%2C%20US&dasa_system=Vimshottari&ayanamsa=Raman&levels=3
+curl -H "Accept: application/json" -X GET "https://d9561d7a-43c9-4045-930c-53619105e82d-00-2jnwzcbpq4a3n.janeway.replit.dev/api/Calculate/DasaAtRange?location=Ajmer%2CRajasthan%2CIndia&birth_time=14%3A43%2017%2F02%2F1977%20%2B05:30&start_time=00%3A00%2001%2F01%2F2016%20-08%3A00&end_time=23%3A59%2031%2F12%2F2035%20-08%3A00&start_location=San%20Jose%2C%20California%2C%20US&end_location=San%20Jose%2C%20California%2C%20US&dasa_system=Vimshottari&ayanamsa=Raman&levels=3" | json_pp
 
