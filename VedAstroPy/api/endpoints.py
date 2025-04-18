@@ -138,6 +138,15 @@ async def calculate_dasa_at_range(
                 
                 # Check if format matches HH:MM/DD/MM/YYYY/±HH:MM
                 time_parts = time_str.split('/')
+                
+                # Handle case where only time is provided
+                if len(time_parts) == 1 and ':' in time_str:
+                    # Default to current date and +00:00 timezone
+                    from datetime import datetime
+                    now = datetime.now()
+                    time_str = f"{time_str}/{now.day:02d}/{now.month:02d}/{now.year}/+00:00"
+                    time_parts = time_str.split('/')
+                
                 if len(time_parts) != 5:
                     return {"error": f"Invalid time format: {time_str}. Expected format: HH:MM/DD/MM/YYYY/±HH:MM"}
                 
