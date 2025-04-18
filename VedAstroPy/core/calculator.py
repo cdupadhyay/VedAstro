@@ -13,7 +13,10 @@ class Calculator:
         """Calculate planet positions at given time"""
         print(f"DEBUG Calculator: Calculating planet positions for time {time.std_time}")
         # Convert time to Julian day
-        date = datetime.strptime(time.std_time.split()[0], "%H:%M/%d/%m/%Y")
+        print(f"DEBUG Calculator: Parsing datetime string: {time.std_time}")
+        # Parse full datetime string
+        date = datetime.strptime(time.std_time, "%H:%M/%d/%m/%Y/%z")
+        print(f"DEBUG Calculator: Parsed datetime: {date}")
         jd = swe.julday(date.year, date.month, date.day, 
                        date.hour + date.minute/60.0)
         print(f"DEBUG Calculator: Converted to Julian Day: {jd}")
