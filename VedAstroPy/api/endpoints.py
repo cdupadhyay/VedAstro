@@ -65,13 +65,15 @@ async def add_person(
 
 @app.get("/api/Calculate/DasaAtRange")
 async def calculate_dasa_at_range(
-    location: str,
-    birth_time: str,  # Format: "HH:MM DD/MM/YYYY"
-    start_time: str,  # Format: "HH:MM DD/MM/YYYY" 
-    end_time: str,    # Format: "HH:MM DD/MM/YYYY"
+    location: str,      # Birth location name
+    birth_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM" 
+    start_location: str = None,  # Optional start time location
+    start_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM"
+    end_location: str = None,    # Optional end time location  
+    end_time: str,      # Format: "HH:MM DD/MM/YYYY +HH:MM"
     dasa_system: str = "Vimshottari",  # Supported: Vimshottari, Ashtottari
     ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
-    levels: int = 3,  # Range: 1-7
+    levels: int = 3,    # Range: 1-7
 ):
     """Calculate dasa periods between start and end time for a person.
     
@@ -82,14 +84,18 @@ async def calculate_dasa_at_range(
         end_time: End date and time in format "HH:MM DD/MM/YYYY"
     """
     try:
-        # Parse location into GeoLocation
-        lat, lon = 0.0, 0.0  # Implement geocoding
-        geo_location = GeoLocation(location, lat, lon)
+        # Parse locations into GeoLocation objects
+        birth_lat, birth_lon = 0.0, 0.0  # Implement geocoding for birth location
+        birth_location = GeoLocation(location, birth_lat, birth_lon)
         
-        # Create Time objects
-        birth = Time(birth_time, geo_location) 
-        start = Time(start_time, geo_location)
-        end = Time(end_time, geo_location)
+        # Use birth location as default for start/end if not specified
+        start_location = GeoLocation(start_location, *get_coords(start_location)) if start_location else birth_location
+        end_location = GeoLocation(end_location, *get_coords(end_location)) if end_location else birth_location
+        
+        # Create Time objects with locations and timezone offsets
+        birth = Time(birth_time, birth_location)
+        start = Time(start_time, start_location) 
+        end = Time(end_time, end_location)
         
         # Calculate dasas
         dasa_periods = Calculator.calculate_dasa_at_range(birth, start, end)
