@@ -91,9 +91,9 @@ async def calculate_dasa_at_range(
                  - City, Country: "Paris, France"
                  - City, State, Country: "Ajmer, Rajasthan, India"
                  - City with state/province: "New Delhi, India"
-        birth_time: Birth date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30")
-        start_time: Start date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/1990 +05:30") 
-        end_time: End date and time with UTC offset in format "HH:MM DD/MM/YYYY +HH:MM" (e.g. "14:30 25/12/2024 +05:30")
+        birth_time: Birth date and time with UTC offset in format "HH:MM/DD/MM/YYYY/±HH:MM" (e.g. "14:30/25/12/1990/+05:30")
+        start_time: Start date and time with UTC offset in format "HH:MM/DD/MM/YYYY/±HH:MM" (e.g. "14:30/25/12/1990/+05:30") 
+        end_time: End date and time with UTC offset in format "HH:MM/DD/MM/YYYY/±HH:MM" (e.g. "14:30/25/12/2024/+05:30")
         start_location: Optional location for start time, uses same format as birth location
         end_location: Optional location for end time, uses same format as birth location
         dasa_system: Dasa system to use, either "Vimshottari" or "Ashtottari"
@@ -128,6 +128,28 @@ async def calculate_dasa_at_range(
             end_location = GeoLocation(end_location, *end_coords) 
         else:
             end_location = birth_location
+
+        # Validate time format
+        def validate_time_format(time_str):
+            try:
+                # Check if format matches HH:MM/DD/MM/YYYY/±HH:MM
+                time_parts = time_str.split('/')
+                if len(time_parts) != 5:
+                    return {"error": f"Invalid time format: {time_str}. Expected format: HH:MM/DD/MM/YYYY/±HH:MM"}
+                
+                time, day, month, year, offset = time_parts
+                if not (offset.startswith('+') or offset.startswith('-')):
+                    return {"error": f"Invalid UTC offset format in {time_str}. Must start with + or -"}
+                
+                return None
+            except Exception as e:
+                return {"error": f"Invalid time format: {str(e)}"}
+
+        # Validate all time inputs
+        for time_str, desc in [(birth_time, "birth time"), (start_time, "start time"), (end_time, "end time")]:
+            error = validate_time_format(time_str)
+            if error:
+                return error
 
         birth = Time(birth_time, birth_location)
         start = Time(start_time, start_location) 
