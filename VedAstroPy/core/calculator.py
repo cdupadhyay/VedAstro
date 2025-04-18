@@ -11,10 +11,12 @@ class Calculator:
     @staticmethod
     def calculate_planet_positions(time: Time) -> Dict[str, float]:
         """Calculate planet positions at given time"""
+        print(f"DEBUG Calculator: Calculating planet positions for time {time.std_time}")
         # Convert time to Julian day
         date = datetime.strptime(time.std_time.split()[0], "%H:%M/%d/%m/%Y")
         jd = swe.julday(date.year, date.month, date.day, 
                        date.hour + date.minute/60.0)
+        print(f"DEBUG Calculator: Converted to Julian Day: {jd}")
 
         # Calculate for all planets
         planets = {
@@ -175,7 +177,10 @@ class Calculator:
         swe.set_sid_mode(selected_ayanamsa)
         
         # Calculate moon's constellation at birth
-        moon_pos = Calculator.calculate_planet_positions(birth_time)['Moon']
+        print(f"DEBUG Calculator: Getting moon position for birth time")
+        planet_positions = Calculator.calculate_planet_positions(birth_time)
+        print(f"DEBUG Calculator: All planet positions at birth: {planet_positions}")
+        moon_pos = planet_positions['Moon']
         print(f"DEBUG Calculator: Moon position at birth: {moon_pos}")
         nakshatra = math.floor(moon_pos / 13.333333)
         remainder = (moon_pos % 13.333333) / 13.333333
@@ -223,9 +228,11 @@ class Calculator:
             # Adjust first dasa period based on remainder
             if current_dt == birth_dt:
                 years = years * (1 - remainder)
+                print(f"DEBUG Calculator: First dasa period adjusted years: {years}")
 
             # Create period object if it overlaps with requested range
             period_end = current_dt.replace(year=current_dt.year + int(years))
+            print(f"DEBUG Calculator: Period for lord {lord}: {current_dt} to {period_end}")
             if period_end > start_dt:
                 dasa_periods.append({
                     'lord': lord,
