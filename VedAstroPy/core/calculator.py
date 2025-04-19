@@ -330,10 +330,10 @@ class Calculator:
 
                 # Create main dasa period with correct formatting
                 # Set times to 00:00
-            start = start.replace(hour=0, minute=0)
-            end = end.replace(hour=0, minute=0)
+                start = start.replace(hour=0, minute=0)
+                end = end.replace(hour=0, minute=0)
             
-            period = {
+                period = {
                     'Type': 'Mahadasa (Main Period)', 
                     'Start': start.strftime("00:00 %d/%m/%Y %z"),
                     'End': end.strftime("00:00 %d/%m/%Y %z"), 
