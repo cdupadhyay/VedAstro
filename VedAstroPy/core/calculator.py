@@ -243,13 +243,20 @@ class Calculator:
                 print(f"DEBUG Calculator: First dasa period adjusted years: {years}")
 
             # Create period object if it overlaps with requested range
-            period_end = current_dt.replace(year=current_dt.year + int(years))
+            # Calculate exact period end using Julian days like C# code
+            years_in_days = years * 365.25
+            period_end = current_dt + timedelta(days=years_in_days)
             print(f"DEBUG Calculator: Period for lord {lord}: {current_dt} to {period_end}")
+            
             if period_end > start_dt:
-                # Calculate duration in hours
+                # Calculate precise duration in hours
                 start = max(current_dt, start_dt)
                 end = min(period_end, end_dt)
                 duration_hours = (end - start).total_seconds() / 3600
+                
+                # Adjust for ayanamsa
+                if selected_ayanamsa == swe.SIDM_LAHIRI:
+                    duration_hours += (0.0083333 * duration_hours)
 
                 # Format duration text
                 if duration_hours >= 8760:  # 1 year
@@ -268,15 +275,26 @@ class Calculator:
                         return None
 
                     sub_periods = {}
-                    remaining_duration = total_duration 
+                    remaining_duration = total_duration
                     current_lord_idx = dasa_sequence.index(parent_lord)
-                    total_years = sum(dasa_years.values())
-
+                    
+                    # Get full years for this level's planet
+                    if level == 1:
+                        total_years = dasa_years[parent_lord]
+                    else:
+                        # For sub-periods, calculate proportional to parent's duration
+                        total_years = sum(dasa_years.values())
+                    
                     while remaining_duration > 0:
                         current_lord = dasa_sequence[current_lord_idx]
                         lord_years = dasa_years[current_lord]
-                        # Calculate duration proportionally 
-                        sub_duration = (lord_years / total_years) * total_duration
+                        
+                        # Calculate duration based on level
+                        if level == 1:
+                            sub_duration = lord_years * (24 * 365.25) # Convert to hours
+                        else:
+                            sub_duration = (lord_years / total_years) * total_duration
+                            
                         if sub_duration < 0.001:
                             break
 
