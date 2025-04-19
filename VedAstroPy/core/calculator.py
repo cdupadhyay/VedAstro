@@ -361,6 +361,9 @@ class Calculator:
             if current_dt > end_dt:
                 break
 
+        # Sort periods by start time
+        dasa_periods.sort(key=lambda x: datetime.strptime(x['Start'], "00:00 %d/%m/%Y %z"))
+
         # Format final response
         formatted_periods = {}
         for period in dasa_periods:
@@ -370,7 +373,10 @@ class Calculator:
             # Also format SubDasas if they exist
             if 'SubDasas' in period:
                 sub_periods = {}
-                for sub_lord, sub_period in period['SubDasas'].items():
+                # Sort sub periods by start time
+                sorted_sub_items = sorted(period['SubDasas'].items(), 
+                    key=lambda x: datetime.strptime(x[1]['Start'], "00:00 %d/%m/%Y %z"))
+                for sub_lord, sub_period in sorted_sub_items:
                     sub_periods[sub_lord] = sub_period
                 period['SubDasas'] = sub_periods
 
