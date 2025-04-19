@@ -262,7 +262,45 @@ class Calculator:
                 else:
                     duration_text = f"{duration_hours*60:.1f} minutes"
 
-                dasa_periods.append({
+                def calculate_sub_periods(parent_lord, total_duration, level=1):
+                    if level > levels:
+                        return None
+
+                    sub_periods = {}
+                    remaining_duration = total_duration
+                    current_lord_idx = dasa_sequence.index(parent_lord)
+
+                    while remaining_duration > 0:
+                        current_lord = dasa_sequence[current_lord_idx]
+                        lord_years = dasa_years[current_lord]
+                        sub_duration = (lord_years / sum(dasa_years.values())) * total_duration
+
+                        sub_period = {
+                            'Type': 'Bhukti' if level == 2 else 'Antaram' if level == 3 else f'PD{level}',
+                            'Start': start.strftime("%H:%M %d/%m/%Y %z"),
+                            'End': end.strftime("%H:%M %d/%m/%Y %z"),
+                            'DurationHours': sub_duration,
+                            'DurationText': f"{sub_duration/8760:.1f} years",
+                            'TechnicalName': f"{current_lord}PD{level}",
+                            'Lord': current_lord,
+                            'ParentLord': parent_lord,
+                            'Description': f"Sub period of {current_lord} under {parent_lord}",
+                            'Nature': "Neutral"
+                        }
+
+                        # Calculate next level sub-periods recursively
+                        sub_sub_periods = calculate_sub_periods(current_lord, sub_duration, level + 1)
+                        if sub_sub_periods:
+                            sub_period['SubDasas'] = sub_sub_periods
+
+                        sub_periods[current_lord] = sub_period
+                        remaining_duration -= sub_duration
+                        current_lord_idx = (current_lord_idx + 1) % len(dasa_sequence)
+
+                    return sub_periods
+
+                # Create main dasa period
+                period = {
                     'Type': 'Dasa',
                     'Start': start.strftime("%H:%M %d/%m/%Y %z"),
                     'End': end.strftime("%H:%M %d/%m/%Y %z"),
@@ -272,9 +310,16 @@ class Calculator:
                     'Lord': lord,
                     'ParentLord': "Empty",
                     'Description': f"Main dasa period of {lord}",
-                    'Nature': "Neutral",  # Can be enhanced based on astrological rules
-                    'years': years
-                })
+                    'Nature': "Neutral"  # Can be enhanced based on astrological rules
+                }
+
+                # Calculate sub-periods if levels > 1
+                if levels > 1:
+                    sub_periods = calculate_sub_periods(lord, duration_hours)
+                    if sub_periods:
+                        period['SubDasas'] = sub_periods
+
+                dasa_periods.append(period)
 
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % 9
