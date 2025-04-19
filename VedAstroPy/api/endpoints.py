@@ -82,6 +82,7 @@ async def calculate_dasa_at_range(
     dasa_system: str = "Vimshottari",  # Supported: Vimshottari, Ashtottari
     ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
     levels: int = 3,    # Range: 1-7
+    precision_hours: int = 24,  # How accurately dasa periods are calculated, lower number means higher precision
 ):
     print(f"DEBUG: Received parameters:")
     print(f"location: {location}")
@@ -189,7 +190,7 @@ async def calculate_dasa_at_range(
         start = Time(start_time, start_location) 
         end = Time(end_time, end_location)
 
-        dasa_periods = Calculator.calculate_dasa_at_range(birth, start, end)
+        dasa_periods = Calculator.calculate_dasa_at_range(birth, start, end, precision_hours=precision_hours)
 
         return dasa_periods
     except Exception as e:

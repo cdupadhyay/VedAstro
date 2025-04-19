@@ -276,12 +276,13 @@ class Calculator:
                         sub_duration = (lord_years / sum(dasa_years.values())) * total_duration
 
                         sub_period = {
-                            'Type': ('Bhukti' if level == 2 else
-                                   'Antaram' if level == 3 else
-                                   'Sukshma' if level == 4 else
-                                   'Prana' if level == 5 else
-                                   'Avi Prana' if level == 6 else
-                                   'Viprana' if level == 7 else f'PD{level}'),
+                            'Type': ('Mahadasa (Main Period)' if level == 1 else
+                                   'Bhukti (Sub Period)' if level == 2 else
+                                   'Antaram (Sub-sub Period)' if level == 3 else
+                                   'Sukshma (Sub-sub-sub Period)' if level == 4 else
+                                   'Prana (4th Level Sub Period)' if level == 5 else
+                                   'Avi Prana (5th Level Sub Period)' if level == 6 else
+                                   'Viprana (6th Level Sub Period)' if level == 7 else f'PD{level}'),
                             'Start': start.strftime("%H:%M %d/%m/%Y %z"),
                             'End': end.strftime("%H:%M %d/%m/%Y %z"),
                             'DurationHours': sub_duration,
