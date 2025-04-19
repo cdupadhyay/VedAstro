@@ -329,10 +329,14 @@ class Calculator:
                     return sub_periods
 
                 # Create main dasa period with correct formatting
-                period = {
-                    'Type': 'Mahadasa (Main Period)',
-                    'Start': start.strftime("%H:%M %d/%m/%Y %z"),
-                    'End': end.strftime("%H:%M %d/%m/%Y %z"), 
+                # Set times to 00:00
+            start = start.replace(hour=0, minute=0)
+            end = end.replace(hour=0, minute=0)
+            
+            period = {
+                    'Type': 'Mahadasa (Main Period)', 
+                    'Start': start.strftime("00:00 %d/%m/%Y %z"),
+                    'End': end.strftime("00:00 %d/%m/%Y %z"), 
                     'DurationHours': duration_hours,
                     'DurationText': duration_text,
                     'TechnicalName': f"{lord}PD1",
@@ -357,7 +361,23 @@ class Calculator:
             if current_dt > end_dt:
                 break
 
-        return {'dasa_periods': dasa_periods}
+        # Format final response
+        formatted_periods = {}
+        for period in dasa_periods:
+            lord = period['Lord']
+            formatted_periods[lord] = period
+            
+            # Also format SubDasas if they exist
+            if 'SubDasas' in period:
+                sub_periods = {}
+                for sub_lord, sub_period in period['SubDasas'].items():
+                    sub_periods[sub_lord] = sub_period
+                period['SubDasas'] = sub_periods
+
+        return {
+            'Status': 'Pass',
+            'Payload': formatted_periods
+        }
 
     @staticmethod
     def calculate_tarabala(time: Time) -> Dict[str, str]:
