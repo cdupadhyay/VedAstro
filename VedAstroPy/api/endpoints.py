@@ -147,7 +147,7 @@ async def calculate_dasa_at_range(
                 # Convert old format (spaces and dots) to new format (slashes)
                 # Example: "14:43 17/02/1977 +05.30" -> "14:43/17/02/1977/+05:30"
                 time_str = time_str.replace(' ', '/').replace('.', ':')
-                
+
                 # Convert UTC offset format from +HH:MM to +HH:MM
                 if " +" in time_str or " -" in time_str:
                     time_parts = time_str.rsplit(" ", 1)
@@ -157,7 +157,7 @@ async def calculate_dasa_at_range(
 
                 # Check if format matches HH:MM/DD/MM/YYYY/±HH:MM
                 time_parts = time_str.split('/')
-                
+
                 # Handle case where only time is provided
                 if len(time_parts) == 1 and ':' in time_str:
                     # Default to current date and +00:00 timezone
@@ -165,14 +165,14 @@ async def calculate_dasa_at_range(
                     now = datetime.now()
                     time_str = f"{time_str}/{now.day:02d}/{now.month:02d}/{now.year}/+00:00"
                     time_parts = time_str.split('/')
-                
+
                 if len(time_parts) != 5:
                     return {"error": f"Invalid time format: {time_str}. Expected format: HH:MM/DD/MM/YYYY/±HH:MM"}
-                
+
                 time, day, month, year, offset = time_parts
                 if not (offset.startswith('+') or offset.startswith('-')):
                     return {"error": f"Invalid UTC offset format in {time_str}. Must start with + or -"}
-                
+
                 return None
             except Exception as e:
                 return {"error": f"Invalid time format: {str(e)}"}
@@ -194,6 +194,7 @@ async def calculate_dasa_at_range(
 
         return dasa_periods
     except Exception as e:
+        print(f"ERROR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/Calculate/Tarabala")
