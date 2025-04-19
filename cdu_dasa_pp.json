@@ -1,13 +1,13 @@
 {
    "dasa_periods" : [
       {
-         "Description" : "Main dasa period of Mercury",
+         "Description" : "Main period of Mercury",
          "DurationHours" : 88801.2166666667,
          "DurationText" : "10.1 years",
          "End" : "14:43 17/02/2026 +0530",
          "Lord" : "Mercury",
          "Nature" : "Neutral",
-         "ParentLord" : "Empty",
+         "ParentLord" : "",
          "Start" : "00:00 01/01/2016 -0800",
          "SubDasas" : {
             "Jupiter" : {
@@ -10020,16 +10020,16 @@
             }
          },
          "TechnicalName" : "MercuryPD1",
-         "Type" : "Dasa"
+         "Type" : "Mahadasa (Main Period)"
       },
       {
-         "Description" : "Main dasa period of Ketu",
+         "Description" : "Main period of Ketu",
          "DurationHours" : 61368,
          "DurationText" : "7.0 years",
          "End" : "14:43 17/02/2033 +0530",
          "Lord" : "Ketu",
          "Nature" : "Neutral",
-         "ParentLord" : "Empty",
+         "ParentLord" : "",
          "Start" : "14:43 17/02/2026 +0530",
          "SubDasas" : {
             "Jupiter" : {
@@ -20042,16 +20042,16 @@
             }
          },
          "TechnicalName" : "KetuPD1",
-         "Type" : "Dasa"
+         "Type" : "Mahadasa (Main Period)"
       },
       {
-         "Description" : "Main dasa period of Venus",
+         "Description" : "Main period of Venus",
          "DurationHours" : 25126.7833333333,
          "DurationText" : "2.9 years",
          "End" : "00:00 31/12/2035 -0800",
          "Lord" : "Venus",
          "Nature" : "Neutral",
-         "ParentLord" : "Empty",
+         "ParentLord" : "",
          "Start" : "14:43 17/02/2033 +0530",
          "SubDasas" : {
             "Jupiter" : {
@@ -30064,7 +30064,7 @@
             }
          },
          "TechnicalName" : "VenusPD1",
-         "Type" : "Dasa"
+         "Type" : "Mahadasa (Main Period)"
       }
    ]
 }
