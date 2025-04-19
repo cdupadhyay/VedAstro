@@ -152,7 +152,8 @@ class Calculator:
     def calculate_dasa_at_range(birth_time: Time, start_time: Time, end_time: Time, 
                               dasa_system: str = "Vimshottari", 
                               ayanamsa: str = "Raman",
-                              levels: int = 3) -> Dict[str, List[Dict]]:
+                              levels: int = 3,
+                              precision_hours: int = 24) -> Dict[str, List[Dict]]:
         print(f"DEBUG Calculator: Starting dasa calculation with:")
         print(f"DEBUG Calculator: birth_time={birth_time.std_time}")
         print(f"DEBUG Calculator: start_time={start_time.std_time}")
