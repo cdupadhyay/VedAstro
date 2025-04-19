@@ -73,16 +73,16 @@ async def add_person(
 
 @app.get("/api/Calculate/DasaAtRange")
 async def calculate_dasa_at_range(
-    location: str,      # Birth location name
-    birth_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM" 
-    start_time: str,    # Format: "HH:MM DD/MM/YYYY +HH:MM"
-    end_time: str,      # Format: "HH:MM DD/MM/YYYY +HH:MM"
-    start_location: str = None,  # Optional start time location
-    end_location: str = None,    # Optional end time location  
-    dasa_system: str = "Vimshottari",  # Supported: Vimshottari, Ashtottari
-    ayanamsa: str = "Raman",  # Supported: Raman, Lahiri, KP
-    levels: int = 3,    # Range: 1-7
-    precision_hours: int = 24,  # How accurately dasa periods are calculated, lower number means higher precision
+    location: str,
+    birth_time: str, 
+    start_time: str,
+    end_time: str,
+    start_location: str = None,
+    end_location: str = None,
+    dasa_system: str = "Vimshottari",
+    ayanamsa: str = "Raman",
+    levels: int = 3,
+    precision_hours: int = 504  # Match C# default
 ):
     print(f"DEBUG: Received parameters:")
     print(f"location: {location}")

@@ -268,13 +268,17 @@ class Calculator:
                         return None
 
                     sub_periods = {}
-                    remaining_duration = total_duration
+                    remaining_duration = total_duration 
                     current_lord_idx = dasa_sequence.index(parent_lord)
+                    total_years = sum(dasa_years.values())
 
                     while remaining_duration > 0:
                         current_lord = dasa_sequence[current_lord_idx]
                         lord_years = dasa_years[current_lord]
-                        sub_duration = (lord_years / sum(dasa_years.values())) * total_duration
+                        # Calculate duration proportionally 
+                        sub_duration = (lord_years / total_years) * total_duration
+                        if sub_duration < 0.001:
+                            break
 
                         sub_period = {
                             'Type': ('Mahadasa (Main Period)' if level == 1 else
@@ -306,18 +310,18 @@ class Calculator:
 
                     return sub_periods
 
-                # Create main dasa period
+                # Create main dasa period with correct formatting
                 period = {
-                    'Type': 'Dasa',
+                    'Type': 'Mahadasa (Main Period)',
                     'Start': start.strftime("%H:%M %d/%m/%Y %z"),
-                    'End': end.strftime("%H:%M %d/%m/%Y %z"),
+                    'End': end.strftime("%H:%M %d/%m/%Y %z"), 
                     'DurationHours': duration_hours,
                     'DurationText': duration_text,
                     'TechnicalName': f"{lord}PD1",
                     'Lord': lord,
-                    'ParentLord': "Empty",
-                    'Description': f"Main dasa period of {lord}",
-                    'Nature': "Neutral"  # Can be enhanced based on astrological rules
+                    'ParentLord': "",
+                    'Description': f"Main period of {lord}",
+                    'Nature': "Neutral"
                 }
 
                 # Calculate sub-periods if levels > 1
