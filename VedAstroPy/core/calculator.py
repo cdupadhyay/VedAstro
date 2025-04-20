@@ -187,8 +187,8 @@ class Calculator:
         moon_pos = planet_positions['Moon']
         print(f"DEBUG Calculator: Moon position at birth: {moon_pos}")
         # Calculate nakshatra and remainder like C# code
-        nakshatra = int((moon_pos * 3) / 40) 
-        remainder = ((moon_pos * 3) % 40) / 40
+        nakshatra = math.floor(moon_pos / 13.333333)
+        remainder = (moon_pos % 13.333333) / 13.333333
         print(f"DEBUG Calculator: Nakshatra: {nakshatra}, Remainder: {remainder}")
 
         # Define dasa sequences and years
