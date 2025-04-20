@@ -246,7 +246,15 @@ class Calculator:
             # Calculate exact period end using Julian days like C# code
             years_in_days = years * 365.25
             period_end = current_dt + timedelta(days=years_in_days)
-            print(f"DEBUG Calculator: Period for lord {lord}: {current_dt} to {period_end}")
+            print(f"DEBUG Calculator: Period for lord {lord}:")
+            print(f"  Years: {years}")
+            print(f"  Days: {years_in_days}")
+            print(f"  Start: {current_dt}")
+            print(f"  End: {period_end}")
+            print(f"  Duration Hours: {duration_hours}")
+            print(f"  Birth Remainder: {remainder}")
+            print(f"  Moon Position: {moon_pos}")
+            print(f"  Nakshatra: {nakshatra}")
             
             if period_end > start_dt:
                 # Calculate precise duration in hours
