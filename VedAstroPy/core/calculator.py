@@ -220,20 +220,6 @@ class Calculator:
         initial_years = years * (1 - remainder)  # Remaining years in first dasa
 
         print(f"DEBUG Calculator: Start lord: {lord}, Initial years: {initial_years}")
-            "Vimshottari": {
-                "sequence": ['Ketu', 'Venus', 'Sun', 'Moon', 'Mars', 
-                           'Rahu', 'Jupiter', 'Saturn', 'Mercury'],
-                "years": {'Ketu': 7, 'Venus': 20, 'Sun': 6, 'Moon': 10,
-                         'Mars': 7, 'Rahu': 18, 'Jupiter': 16, 'Saturn': 19,
-                         'Mercury': 17}
-            },
-            "Ashtottari": {
-                "sequence": ['Sun', 'Moon', 'Mars', 'Rahu', 'Jupiter', 
-                           'Saturn', 'Mercury', 'Venus'],
-                "years": {'Sun': 6, 'Moon': 15, 'Mars': 8, 'Rahu': 18,
-                         'Jupiter': 19, 'Saturn': 10, 'Mercury': 17, 'Venus': 7}
-            }
-        }
 
         # Get selected dasa system
         selected_system = dasa_systems.get(dasa_system, dasa_systems["Vimshottari"])
