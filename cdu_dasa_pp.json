@@ -1128,7 +1128,7 @@
       },
       "Mercury" : {
          "Description" : "Main period of Mercury",
-         "DurationHours" : 92194.4630904278,
+         "DurationHours" : 92194.5478171344,
          "DurationText" : "10.5 years",
          "End" : "00:00 08/07/2026 +0530",
          "Lord" : "Mercury",
@@ -2254,7 +2254,7 @@
       },
       "Venus" : {
          "Description" : "Main period of Venus",
-         "DurationHours" : 21739.5369095722,
+         "DurationHours" : 21739.4521828656,
          "DurationText" : "2.5 years",
          "End" : "00:00 31/12/2035 +0530",
          "Lord" : "Venus",
