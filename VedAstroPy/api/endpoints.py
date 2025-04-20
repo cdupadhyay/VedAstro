@@ -194,7 +194,7 @@ async def calculate_dasa_at_range(
 
         # Debug comparison
         import json
-        with open('cdu_dasas_og.json', 'r') as f:
+        with open('/home/runner/workspace/cdu_dasas_og.json', 'r') as f:
             csharp_output = json.load(f)
 
         print("\nC# Output First Dasa:")
