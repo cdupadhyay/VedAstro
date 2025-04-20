@@ -186,10 +186,18 @@ class Calculator:
         print(f"DEBUG Calculator: All planet positions at birth: {planet_positions}")
         moon_pos = planet_positions['Moon']
         print(f"DEBUG Calculator: Moon position at birth: {moon_pos}")
-        # Calculate nakshatra and remainder like C# code
-        nakshatra = math.floor(moon_pos / 13.333333)
-        remainder = (moon_pos % 13.333333) / 13.333333
+        # Calculate nakshatra (moon constellation) like C# code
+        nakshatra = math.floor(moon_pos / 13.333333)  # 27 nakshatras divided across 360 degrees
+        remainder = (moon_pos % 13.333333) / 13.333333  # Get position within nakshatra
         print(f"DEBUG Calculator: Nakshatra: {nakshatra}, Remainder: {remainder}")
+
+        # Calculate birth dasa planet based on nakshatra
+        start_lord_index = nakshatra % 9  # Map to 9 planets cycle
+        lord = dasa_sequence[start_lord_index]
+        years = dasa_years[lord]
+        initial_years = years * (1 - remainder)  # Remaining years in first dasa
+
+        print(f"DEBUG Calculator: Start lord: {lord}, Initial years: {initial_years}")
 
         # Define dasa sequences and years
         dasa_systems = {
