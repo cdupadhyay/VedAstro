@@ -251,13 +251,16 @@ class Calculator:
             print(f"  Days: {years_in_days}")
             print(f"  Start: {current_dt}")
             print(f"  End: {period_end}")
-            print(f"  Duration Hours: {duration_hours}")
             print(f"  Birth Remainder: {remainder}")
             print(f"  Moon Position: {moon_pos}")
             print(f"  Nakshatra: {nakshatra}")
             
             if period_end > start_dt:
                 # Calculate precise duration in hours
+                start = max(current_dt, start_dt)
+                end = min(period_end, end_dt)
+                duration_hours = (end - start).total_seconds() / 3600
+                print(f"  Duration Hours: {duration_hours}")
                 start = max(current_dt, start_dt)
                 end = min(period_end, end_dt)
                 duration_hours = (end - start).total_seconds() / 3600
