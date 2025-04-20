@@ -148,6 +148,16 @@ class Calculator:
 
         return events
 
+    @staticmethod
+    def calculate_moon_longitude(time_str: str, latitude: float, longitude: float) -> float:
+        """Placeholder function to calculate moon longitude using location.  Needs implementation."""
+        # This is a placeholder; replace with actual calculation using Swiss Ephemeris or similar
+        date = datetime.strptime(time_str, "%H:%M/%d/%m/%Y/%z")
+        jd = swe.julday(date.year, date.month, date.day, date.hour + date.minute / 60.0)
+        pos = swe.calc_ut(jd, swe.MOON)[0]
+        return pos[0]
+
+
     @staticmethod 
     def calculate_dasa_at_range(birth_time: Time, start_time: Time, end_time: Time, 
                               dasa_system: str = "Vimshottari", 
@@ -182,10 +192,10 @@ class Calculator:
 
         # Calculate moon's constellation at birth
         print(f"DEBUG Calculator: Getting moon position for birth time")
-        planet_positions = Calculator.calculate_planet_positions(birth_time)
-        print(f"DEBUG Calculator: All planet positions at birth: {planet_positions}")
-        moon_pos = planet_positions['Moon']
-        print(f"DEBUG Calculator: Moon position at birth: {moon_pos}")
+        #Using the new function to get moon position
+        birth_location = birth_time.location
+        moon_pos = Calculator.calculate_moon_longitude(birth_time.std_time, birth_location.latitude, birth_location.longitude)
+        print(f"DEBUG Calculator: All planet positions at birth: {moon_pos}")
         # Calculate nakshatra (moon constellation) like C# code
         nakshatra = math.floor(moon_pos / 13.333333)  # 27 nakshatras divided across 360 degrees
         remainder = (moon_pos % 13.333333) / 13.333333  # Get position within nakshatra
