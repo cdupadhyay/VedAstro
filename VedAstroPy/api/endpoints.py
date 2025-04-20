@@ -192,12 +192,7 @@ async def calculate_dasa_at_range(
 
         dasa_periods = Calculator.calculate_dasa_at_range(birth, start, end, precision_hours=precision_hours)
 
-        # Debug comparison
-        import json
-        with open('/home/runner/workspace/cdu_dasas_og.json', 'r') as f:
-            csharp_output = json.load(f)
-
-        print("\nC# Output First Dasa:")
+        
         print(json.dumps(list(csharp_output["Payload"].values())[0], indent=2))
         print("\nPython Output First Dasa:")
         print(json.dumps(list(dasa_periods["Payload"].values())[0], indent=2))
