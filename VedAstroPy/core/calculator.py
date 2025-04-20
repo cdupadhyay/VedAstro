@@ -243,25 +243,29 @@ class Calculator:
         end_dt = datetime.strptime(end_time.std_time, "%H:%M/%d/%m/%Y/%z")
         print(f"DEBUG Calculator: Parsed end time: {end_dt}")
 
-        # Calculate start of current dasa by moving forward from birth
-        # Similar to how C# code moves forward through dasas
+        # Calculate dasa progression like C# DasaManager.CurrentDasa8Levels
         current_dt = birth_dt
         current_lord_index = start_lord_index
-        lord = dasa_sequence[current_lord_index]
         
-        # Calculate remaining years in birth dasa
-        initial_years = years * (1 - remainder)
-        years_in_days = initial_years * 365.25
-        next_dasa_start = birth_dt + timedelta(days=years_in_days)
+        # Get initial dasa duration
+        initial_lord = dasa_sequence[current_lord_index]
+        initial_years = dasa_years[initial_lord] * (1 - remainder)
+        initial_days = initial_years * 365.25
         
-        # Move through dasas until we find the one containing start_dt
-        while next_dasa_start <= start_dt:
-            current_dt = next_dasa_start
-            current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
+        # Move through dasa periods until we find start period
+        while current_dt < start_dt:
+            # Get current period duration
             lord = dasa_sequence[current_lord_index]
-            years = dasa_years[lord]
-            years_in_days = years * 365.25
-            next_dasa_start = current_dt + timedelta(days=years_in_days)
+            period_years = initial_years if lord == initial_lord else dasa_years[lord]
+            period_days = period_years * 365.25
+            
+            # Advance time and lord
+            current_dt += timedelta(days=period_days)
+            current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
+            
+            # Reset initial values after first period
+            if lord == initial_lord:
+                initial_years = dasa_years[lord]
 
         # Now add dasa periods starting from the found period until we pass end time
         while current_dt < end_dt:
