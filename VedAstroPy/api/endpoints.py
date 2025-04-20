@@ -193,8 +193,7 @@ async def calculate_dasa_at_range(
 
         dasa_periods = Calculator.calculate_dasa_at_range(birth, start, end, precision_hours=precision_hours)
 
-        
-        print(json.dumps(list(csharp_output["Payload"].values())[0], indent=2))
+        # Print first dasa period for debugging
         print("\nPython Output First Dasa:")
         print(json.dumps(list(dasa_periods["Payload"].values())[0], indent=2))
 
