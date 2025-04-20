@@ -243,18 +243,27 @@ class Calculator:
         end_dt = datetime.strptime(end_time.std_time, "%H:%M/%d/%m/%Y/%z")
         print(f"DEBUG Calculator: Parsed end time: {end_dt}")
 
+        # Calculate start of current dasa by moving forward from birth
+        # Similar to how C# code moves forward through dasas
         current_dt = birth_dt
         current_lord_index = start_lord_index
-
-        # Add dasa periods until we pass end time
-        while current_dt < end_dt:
-            lord = dasa_sequence[current_lord_index]
+        lord = dasa_sequence[current_lord_index]
+        
+        # Move through dasas until we find the one containing start_dt
+        while current_dt < start_dt:
             years = dasa_years[lord]
-
-            # Adjust first dasa period based on remainder
             if current_dt == birth_dt:
                 years = years * (1 - remainder)
-                print(f"DEBUG Calculator: First dasa period adjusted years: {years}")
+
+            years_in_days = years * 365.25
+            current_dt = current_dt + timedelta(days=years_in_days)
+            current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
+            lord = dasa_sequence[current_lord_index]
+
+        # Now add dasa periods starting from the found period until we pass end time
+        while current_dt < end_dt:
+            lord = dasa_sequence[current_lord_index] 
+            years = dasa_years[lord]
 
             # Create period object if it overlaps with requested range
             # Calculate exact period end using Julian days like C# code
