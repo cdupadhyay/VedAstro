@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+import json
 from sqlalchemy.orm import Session
 from datetime import datetime
 from models.base import Person, Time, GeoLocation
