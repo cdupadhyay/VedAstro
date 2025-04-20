@@ -3,7 +3,7 @@
   "person_id": "2a5c9c06-521c-46ae-a041-7c57321a0146"
 }
 
-curl -H "Accept: application/json" -X GET "https://d9561d7a-43c9-4045-930c-53619105e82d-00-2jnwzcbpq4a3n.janeway.replit.dev/api/Calculate/DasaAtRange?location=Ajmer%2C%20Rajasthan%2C%20India&birth_time=14%3A43%2F17%2F02%2F1977%2F%2B05%3A30&start_time=00%3A00%2F01%2F01%2F2016%2F-08%3A00&end_time=00%3A00%2F31%2F12%2F2035%2F-08%3A00&start_location=San%20Jose%2C%20California%2C%20USA&end_location=San%20Jose%2C%20California%2C%20USA&dasa_system=Vimshottari&ayanamsa=Raman&levels=3&precision_hours=24" -o output.json
+curl -H "Accept: application/json" -X GET "https://d9561d7a-43c9-4045-930c-53619105e82d-00-2jnwzcbpq4a3n.janeway.replit.dev/api/Calculate/DasaAtRange?location=Ajmer%2C%20Rajasthan%2C%20India&birth_time=14%3A43%2F17%2F02%2F1977%2F%2B05%3A30&start_time=00%3A00%2F01%2F01%2F2016%2F%2B05%3A30&end_time=00%3A00%2F31%2F12%2F2035%2F%2B05%3A30&start_location=Ajmer%2C%20Rajasthan%2C%20India&end_location=Ajmer%2C%20Rajasthan%2C%20India&dasa_system=Vimshottari&ayanamsa=Lahiri&levels=3&precision_hours=24" | json_pp > output.json
 
 
 
