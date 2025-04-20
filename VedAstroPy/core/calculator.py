@@ -249,20 +249,23 @@ class Calculator:
         current_lord_index = start_lord_index
         lord = dasa_sequence[current_lord_index]
         
+        # Calculate remaining years in birth dasa
+        initial_years = years * (1 - remainder)
+        years_in_days = initial_years * 365.25
+        next_dasa_start = birth_dt + timedelta(days=years_in_days)
+        
         # Move through dasas until we find the one containing start_dt
-        while current_dt < start_dt:
-            years = dasa_years[lord]
-            if current_dt == birth_dt:
-                years = years * (1 - remainder)
-
-            years_in_days = years * 365.25
-            current_dt = current_dt + timedelta(days=years_in_days)
+        while next_dasa_start <= start_dt:
+            current_dt = next_dasa_start
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
             lord = dasa_sequence[current_lord_index]
+            years = dasa_years[lord]
+            years_in_days = years * 365.25
+            next_dasa_start = current_dt + timedelta(days=years_in_days)
 
         # Now add dasa periods starting from the found period until we pass end time
         while current_dt < end_dt:
-            lord = dasa_sequence[current_lord_index] 
+            lord = dasa_sequence[current_lord_index]
             years = dasa_years[lord]
 
             # Create period object if it overlaps with requested range
