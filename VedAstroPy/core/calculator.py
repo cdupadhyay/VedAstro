@@ -246,23 +246,23 @@ class Calculator:
         # Calculate dasa progression like C# DasaManager.CurrentDasa8Levels
         current_dt = birth_dt
         current_lord_index = start_lord_index
-        
+
         # Get initial dasa duration
         initial_lord = dasa_sequence[current_lord_index]
         initial_years = dasa_years[initial_lord] * (1 - remainder)
         initial_days = initial_years * 365.25
-        
+
         # Move through dasa periods until we find start period
         while current_dt < start_dt:
             # Get current period duration
             lord = dasa_sequence[current_lord_index]
             period_years = initial_years if lord == initial_lord else dasa_years[lord]
             period_days = period_years * 365.25
-            
+
             # Advance time and lord
             current_dt += timedelta(days=period_days)
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
-            
+
             # Reset initial values after first period
             if lord == initial_lord:
                 initial_years = dasa_years[lord]
@@ -284,7 +284,7 @@ class Calculator:
             print(f"  Birth Remainder: {remainder}")
             print(f"  Moon Position: {moon_pos}")
             print(f"  Nakshatra: {nakshatra}")
-            
+
             if period_end > start_dt:
                 # Calculate precise duration in hours
                 start = max(current_dt, start_dt)
@@ -294,7 +294,7 @@ class Calculator:
                 start = max(current_dt, start_dt)
                 end = min(period_end, end_dt)
                 duration_hours = (end - start).total_seconds() / 3600
-                
+
                 # Adjust for ayanamsa
                 if selected_ayanamsa == swe.SIDM_LAHIRI:
                     duration_hours += (0.0083333 * duration_hours)
@@ -311,69 +311,49 @@ class Calculator:
                 else:
                     duration_text = f"{duration_hours*60:.1f} minutes"
 
-                def calculate_sub_periods(parent_lord, total_duration, level=1):
+                def calculate_sub_periods(main_lord, total_duration, level=2):
                     if level > levels:
                         return None
 
                     sub_periods = {}
                     remaining_duration = total_duration
-                    current_lord_idx = dasa_sequence.index(parent_lord)
-                    
-                    # Get full years for this level's planet
-                    if level == 1:
-                        total_years = dasa_years[parent_lord]
-                    else:
-                        # For sub-periods, calculate proportional to parent's duration
-                        total_years = sum(dasa_years.values())
-                    
+                    sub_lord_index = dasa_sequence.index(main_lord)
+
                     while remaining_duration > 0:
-                        current_lord = dasa_sequence[current_lord_idx]
-                        lord_years = dasa_years[current_lord]
-                        
-                        # Calculate duration based on level
-                        if level == 1:
-                            sub_duration = lord_years * (24 * 365.25) # Convert to hours
-                        else:
-                            sub_duration = (lord_years / total_years) * total_duration
-                            
+                        sub_lord = dasa_sequence[sub_lord_index]
+                        sub_years = (dasa_years[sub_lord] / dasa_years[main_lord]) * (total_duration / 8760)
+                        sub_duration = sub_years * 8760
+
                         if sub_duration < 0.001:
                             break
 
                         sub_period = {
-                            'Type': ('Mahadasa (Main Period)' if level == 1 else
-                                   'Bhukti (Sub Period)' if level == 2 else
-                                   'Antaram (Sub-sub Period)' if level == 3 else
-                                   'Sukshma (Sub-sub-sub Period)' if level == 4 else
-                                   'Prana (4th Level Sub Period)' if level == 5 else
-                                   'Avi Prana (5th Level Sub Period)' if level == 6 else
-                                   'Viprana (6th Level Sub Period)' if level == 7 else f'PD{level}'),
+                            'Type': 'Bhukti (Sub Period)' if level == 2 else 'Antaram (Sub-sub Period)' if level == 3 else f'PD{level}',
                             'Start': start.strftime("%H:%M %d/%m/%Y %z"),
                             'End': end.strftime("%H:%M %d/%m/%Y %z"),
                             'DurationHours': sub_duration,
-                            'DurationText': f"{sub_duration/8760:.1f} years",
-                            'TechnicalName': f"{current_lord}PD{level}",
-                            'Lord': current_lord,
-                            'ParentLord': parent_lord,
-                            'Description': f"Sub period of {current_lord} under {parent_lord}",
-                            'Nature': "Neutral"
+                            'DurationText': f"{sub_years:.1f} years",
+                            'Lord': sub_lord,
+                            'ParentLord': main_lord
                         }
 
-                        # Calculate next level sub-periods recursively
-                        sub_sub_periods = calculate_sub_periods(current_lord, sub_duration, level + 1)
-                        if sub_sub_periods:
-                            sub_period['SubDasas'] = sub_sub_periods
+                        if levels > level:
+                            sub_sub_periods = calculate_sub_periods(sub_lord, sub_duration, level + 1)
+                            if sub_sub_periods:
+                                sub_period['SubDasas'] = sub_sub_periods
 
-                        sub_periods[current_lord] = sub_period
+                        sub_periods[sub_lord] = sub_period
                         remaining_duration -= sub_duration
-                        current_lord_idx = (current_lord_idx + 1) % len(dasa_sequence)
+                        sub_lord_index = (sub_lord_index + 1) % len(dasa_sequence)
 
                     return sub_periods
+
 
                 # Create main dasa period with correct formatting
                 # Set times to 00:00
                 start = start.replace(hour=0, minute=0)
                 end = end.replace(hour=0, minute=0)
-            
+
                 period = {
                     'Type': 'Mahadasa (Main Period)', 
                     'Start': start.strftime("00:00 %d/%m/%Y %z"),
@@ -387,7 +367,7 @@ class Calculator:
                     'Nature': "Neutral"
                 }
 
-                # Calculate sub-periods if levels > 1
+                # Calculate sub-periods matching C# implementation
                 if levels > 1:
                     sub_periods = calculate_sub_periods(lord, duration_hours)
                     if sub_periods:
@@ -410,7 +390,7 @@ class Calculator:
         for period in dasa_periods:
             lord = period['Lord']
             formatted_periods[lord] = period
-            
+
             # Also format SubDasas if they exist
             if 'SubDasas' in period:
                 sub_periods = {}
