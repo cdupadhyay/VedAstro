@@ -389,8 +389,8 @@ class Calculator:
 
                 period = {
                     'Type': 'Mahadasa (Main Period)', 
-                    'Start': start.strftime("00:00 %d/%m/%Y %z"),
-                    'End': end.strftime("00:00 %d/%m/%Y %z"), 
+                    'Start': start.strftime("%H:%M %d/%m/%Y %z"),
+                    'End': end.strftime("%H:%M %d/%m/%Y %z"), 
                     'DurationHours': duration_hours,
                     'DurationText': duration_text,
                     'TechnicalName': f"{lord}PD1",
@@ -416,7 +416,7 @@ class Calculator:
                 break
 
         # Sort periods by start time
-        dasa_periods.sort(key=lambda x: datetime.strptime(x['Start'], "00:00 %d/%m/%Y %z"))
+        dasa_periods.sort(key=lambda x: datetime.strptime(x['Start'], "%H:%M %d/%m/%Y %z"))
 
         # Format final response
         formatted_periods = {}
@@ -429,7 +429,7 @@ class Calculator:
                 sub_periods = {}
                 # Sort sub periods by start time
                 sorted_sub_items = sorted(period['SubDasas'].items(), 
-                    key=lambda x: datetime.strptime(x[1]['Start'], "00:00 %d/%m/%Y %z"))
+                    key=lambda x: datetime.strptime(x[1]['Start'], "%H:%M %d/%m/%Y %z"))
                 for sub_lord, sub_period in sorted_sub_items:
                     sub_periods[sub_lord] = sub_period
                 period['SubDasas'] = sub_periods
