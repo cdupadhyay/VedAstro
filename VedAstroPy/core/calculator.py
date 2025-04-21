@@ -69,17 +69,17 @@ class Calculator:
 
         # Get moon position
         moon_pos = Calculator.calculate_planet_positions(birth_time)['Moon']
-        
+
         # Calculate nakshatra (1-27) based on moon longitude
         nakshatra = math.floor(moon_pos / 13.333333333333334)
-        
+
         # Calculate remainder within nakshatra
         remainder = (moon_pos % 13.333333333333334) / 13.333333333333334
-        
+
         # Map nakshatra to starting dasa lord using mod 9
         start_lord_index = nakshatra % 9
         lord = dasa_sequence[start_lord_index]
-        
+
         # Calculate years remaining in birth dasa
         years = dasa_years[lord]
         initial_years = years * (1 - remainder)
@@ -266,34 +266,34 @@ class Calculator:
         print(f"DEBUG Calculator: Parsed end time: {end_dt}")
 
         # Calculate dasa progression like C# DasaManager.CurrentDasa8Levels
-        current_dt = birth_dt
-        current_lord_index = start_lord_index
-
-        # Get initial dasa duration
-        initial_lord = dasa_sequence[current_lord_index]
+        # Calculate initial dasa period starting from birth
         initial_years = dasa_years[initial_lord] * (1 - remainder)
         initial_days = initial_years * 365.25
 
-        # Move through dasa periods until we reach start period
+        # Start from birth time and calculate forward
+        current_dt = birth_dt
+        current_lord_index = start_lord_index
+
+        # Move through dasa periods until we find the period containing start_dt
         while current_dt < start_dt:
             # Get current period duration
             lord = dasa_sequence[current_lord_index]
-            
+
             # Calculate period duration
             if lord == initial_lord:
                 period_years = initial_years
                 initial_years = dasa_years[lord]  # Reset for next occurrence
             else:
                 period_years = dasa_years[lord]
-                
+
             period_days = period_years * 365.25
             period_end = current_dt + timedelta(days=period_days)
-            
+
             # If this period overlaps with start date, we found our period
             if period_end > start_dt:
                 current_dt = current_dt  # Keep current time
                 break
-                
+
             # Otherwise advance to next period
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
