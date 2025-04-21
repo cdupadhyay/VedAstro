@@ -268,39 +268,43 @@ class Calculator:
         current_dt = birth_dt
         current_lord_index = start_lord_index
 
-        # Move through dasa periods until we find the period containing start_dt
-        while current_dt < start_dt:
+        # Track all periods from birth to end date
+        all_periods = []
+        
+        # Continue until we pass end date 
+        while current_dt < end_dt:
             # Get current period duration
             lord = dasa_sequence[current_lord_index]
-
+            
             # Calculate period duration
             if lord == initial_lord:
                 period_years = initial_years
                 initial_years = dasa_years[lord]  # Reset for next occurrence
             else:
                 period_years = dasa_years[lord]
-
+                
             period_days = period_years * 365.25
             period_end = current_dt + timedelta(days=period_days)
-
-            # If this period overlaps with start date, we found our period
+            
+            # Only include periods that overlap with requested range
             if period_end > start_dt:
-                current_dt = current_dt  # Keep current time
-                break
-
-            # Otherwise advance to next period
+                all_periods.append((current_dt, period_end, lord))
+                
+            # Move to next period
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
 
-        # Now add dasa periods starting from the found period until we pass end time
-        while current_dt < end_dt:
-            lord = dasa_sequence[current_lord_index]
-            years = dasa_years[lord]
+        # Reset current time to earliest relevant period
+        if all_periods:
+            current_dt = all_periods[0][0]
 
-            # Create period object if it overlaps with requested range
-            # Calculate exact period end using Julian days like C# code
+        # Generate output for the found periods
+        for period_start, period_end, lord in all_periods:
+            years = (period_end - period_start).days / 365.25
+            
+            # Create period object for overlapping range
+            # Calculate exact period using Julian days like C# code
             years_in_days = years * 365.25
-            period_end = current_dt + timedelta(days=years_in_days)
             print(f"DEBUG Calculator: Period for lord {lord}:")
             print(f"  Years: {years}")
             print(f"  Days: {years_in_days}")
