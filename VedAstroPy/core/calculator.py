@@ -237,19 +237,13 @@ class Calculator:
 
         # Calculate birth dasa planet based on nakshatra
         start_lord_index = nakshatra % 9  # Map to 9 planets cycle
-        lord = dasa_sequence[start_lord_index]
-        years = dasa_years[lord]
+        initial_lord = dasa_sequence[start_lord_index]
+        years = dasa_years[initial_lord]
         initial_years = years * (1 - remainder)  # Remaining years in first dasa
 
-        print(f"DEBUG Calculator: Start lord: {lord}, Initial years: {initial_years}")
-
-        # Get selected dasa system
-        selected_system = dasa_systems.get(dasa_system, dasa_systems["Vimshottari"])
-        dasa_sequence = selected_system["sequence"]
-        dasa_years = selected_system["years"]
+        print(f"DEBUG Calculator: Start lord: {initial_lord}, Initial years: {initial_years}")
 
         # Find start lord index (based on birth nakshatra)
-        start_lord_index = nakshatra % 9
         dasa_periods = []
 
         # Convert times to datetime for calculations
