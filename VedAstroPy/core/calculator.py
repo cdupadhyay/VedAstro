@@ -274,20 +274,29 @@ class Calculator:
         initial_years = dasa_years[initial_lord] * (1 - remainder)
         initial_days = initial_years * 365.25
 
-        # Move through dasa periods until we find start period
+        # Move through dasa periods until we reach start period
         while current_dt < start_dt:
             # Get current period duration
             lord = dasa_sequence[current_lord_index]
-            period_years = initial_years if lord == initial_lord else dasa_years[lord]
-            period_days = period_years * 365.25
-
-            # Advance time and lord
-            current_dt += timedelta(days=period_days)
-            current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
-
-            # Reset initial values after first period
+            
+            # Calculate period duration
             if lord == initial_lord:
-                initial_years = dasa_years[lord]
+                period_years = initial_years
+                initial_years = dasa_years[lord]  # Reset for next occurrence
+            else:
+                period_years = dasa_years[lord]
+                
+            period_days = period_years * 365.25
+            period_end = current_dt + timedelta(days=period_days)
+            
+            # If this period overlaps with start date, we found our period
+            if period_end > start_dt:
+                current_dt = current_dt  # Keep current time
+                break
+                
+            # Otherwise advance to next period
+            current_dt = period_end
+            current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
 
         # Now add dasa periods starting from the found period until we pass end time
         while current_dt < end_dt:
