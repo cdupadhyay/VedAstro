@@ -61,16 +61,28 @@ class Calculator:
         dasa_sequence = ['Ketu', 'Venus', 'Sun', 'Moon', 'Mars', 
                         'Rahu', 'Jupiter', 'Saturn', 'Mercury']
 
-        # Planet dasa years
+        # Planet dasa years 
         dasa_years = {
             'Ketu': 7, 'Venus': 20, 'Sun': 6, 'Moon': 10, 'Mars': 7,
             'Rahu': 18, 'Jupiter': 16, 'Saturn': 19, 'Mercury': 17
         }
 
-        # Get birth star (nakshatra) and remainder
+        # Get moon position
         moon_pos = Calculator.calculate_planet_positions(birth_time)['Moon']
-        nakshatra = int(moon_pos / 13.333333)
-        remainder = (moon_pos % 13.333333) / 13.333333
+        
+        # Calculate nakshatra (1-27) based on moon longitude
+        nakshatra = math.floor(moon_pos / 13.333333333333334)
+        
+        # Calculate remainder within nakshatra
+        remainder = (moon_pos % 13.333333333333334) / 13.333333333333334
+        
+        # Map nakshatra to starting dasa lord using mod 9
+        start_lord_index = nakshatra % 9
+        lord = dasa_sequence[start_lord_index]
+        
+        # Calculate years remaining in birth dasa
+        years = dasa_years[lord]
+        initial_years = years * (1 - remainder)
 
         def get_next_dasa_lord(current_lord: str) -> str:
             """Get next lord in sequence"""
