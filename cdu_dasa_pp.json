@@ -1,3 +1,4215 @@
 {
-   "detail" : "time data '12:35 02/09/1979 +0530' does not match format '00:00 %d/%m/%Y %z'"
+   "Payload" : {
+      "Jupiter" : {
+         "Description" : "Main period of Jupiter",
+         "DurationHours" : 109714.463090428,
+         "DurationText" : "12.5 years",
+         "End" : "00:00 08/07/1990 +0530",
+         "Lord" : "Jupiter",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 01/01/1978 +0530",
+         "SubDasas" : {
+            "Jupiter" : {
+               "DurationHours" : 14628.5950787237,
+               "DurationText" : "1.7 years",
+               "End" : "12:35 02/09/1979 +0530",
+               "Lord" : "Jupiter",
+               "ParentLord" : "Jupiter",
+               "Start" : "00:00 01/01/1978 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1950.47934382983,
+                     "DurationText" : "0.2 years",
+                     "End" : "06:28 23/03/1978 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "00:00 01/01/1978 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 853.33471292555,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:23 27/10/1978 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "03:03 22/09/1978 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 853.33471292555,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:18 03/06/1979 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "12:58 28/04/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2072.38430281919,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:03 22/09/1978 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "18:40 27/06/1978 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1219.04958989364,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:58 28/04/1979 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "17:55 08/03/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2194.28926180856,
+                     "DurationText" : "0.3 years",
+                     "End" : "12:35 02/09/1979 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "02:18 03/06/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2316.19422079792,
+                     "DurationText" : "0.3 years",
+                     "End" : "18:40 27/06/1978 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:28 23/03/1978 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 731.429753936185,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:55 08/03/1979 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:29 06/02/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2438.09917978728,
+                     "DurationText" : "0.3 years",
+                     "End" : "06:29 06/02/1979 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "16:23 27/10/1978 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Ketu" : {
+               "DurationHours" : 6400.01034694162,
+               "DurationText" : "0.7 years",
+               "End" : "14:56 26/02/1984 +0530",
+               "Lord" : "Ketu",
+               "ParentLord" : "Jupiter",
+               "Start" : "22:56 04/06/1983 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 853.334712925549,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:56 08/12/1983 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Ketu",
+                     "Start" : "01:36 03/11/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 373.333936904928,
+                     "DurationText" : "0.0 years",
+                     "End" : "04:16 13/03/1984 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "14:56 26/02/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 373.333936904928,
+                     "DurationText" : "0.0 years",
+                     "End" : "01:36 24/09/1983 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Ketu",
+                     "Start" : "12:16 08/09/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 906.668132483396,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:56 26/02/1984 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Ketu",
+                     "Start" : "20:16 19/01/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 533.334195578468,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:16 08/09/1983 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Ketu",
+                     "Start" : "06:56 17/08/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 960.001552041243,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:36 03/11/1983 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "01:36 24/09/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1013.33497159909,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:16 19/01/1984 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Ketu",
+                     "Start" : "14:56 08/12/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 320.000517347081,
+                     "DurationText" : "0.0 years",
+                     "End" : "06:56 17/08/1983 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Ketu",
+                     "Start" : "22:56 03/08/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1066.66839115694,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:56 03/08/1983 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Ketu",
+                     "Start" : "12:16 20/06/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mars" : {
+               "DurationHours" : 6400.01034694162,
+               "DurationText" : "0.7 years",
+               "End" : "17:17 21/08/1988 +0530",
+               "Lord" : "Mars",
+               "ParentLord" : "Jupiter",
+               "Start" : "01:16 29/11/1987 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 853.334712925549,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:57 28/02/1988 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mars",
+                     "Start" : "14:37 23/01/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 373.333936904928,
+                     "DurationText" : "0.0 years",
+                     "End" : "17:17 02/06/1988 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mars",
+                     "Start" : "03:57 18/05/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 373.333936904928,
+                     "DurationText" : "0.0 years",
+                     "End" : "06:37 06/09/1988 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mars",
+                     "Start" : "17:17 21/08/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 906.668132483396,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:57 18/05/1988 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mars",
+                     "Start" : "09:17 10/04/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 533.334195578468,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:17 21/08/1988 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mars",
+                     "Start" : "11:57 30/07/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 960.001552041243,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:37 23/01/1988 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mars",
+                     "Start" : "14:37 14/12/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1013.33497159909,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:17 10/04/1988 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mars",
+                     "Start" : "03:57 28/02/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 320.000517347081,
+                     "DurationText" : "0.0 years",
+                     "End" : "11:57 30/07/1988 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mars",
+                     "Start" : "03:57 17/07/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1066.66839115694,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:57 17/07/1988 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mars",
+                     "Start" : "17:17 02/06/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mercury" : {
+               "DurationHours" : 15542.8822711439,
+               "DurationText" : "1.8 years",
+               "End" : "22:56 04/06/1983 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Jupiter",
+               "Start" : "08:03 26/08/1981 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2072.38430281919,
+                     "DurationText" : "0.2 years",
+                     "End" : "09:58 22/02/1983 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mercury",
+                     "Start" : "01:35 28/11/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 906.668132483396,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:37 02/01/1982 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "01:57 26/11/1981 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 906.668132483396,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:09 22/08/1982 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mercury",
+                     "Start" : "03:29 16/07/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2201.90832174539,
+                     "DurationText" : "0.3 years",
+                     "End" : "16:50 04/09/1983 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "22:56 04/06/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1295.24018926199,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:29 16/07/1982 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mercury",
+                     "Start" : "04:15 23/05/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2331.43234067159,
+                     "DurationText" : "0.3 years",
+                     "End" : "01:35 28/11/1982 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "22:09 22/08/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2460.95635959779,
+                     "DurationText" : "0.3 years",
+                     "End" : "22:56 04/06/1983 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mercury",
+                     "Start" : "09:58 22/02/1983 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 777.144113557197,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:15 23/05/1982 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mercury",
+                     "Start" : "19:06 20/04/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2590.48037852399,
+                     "DurationText" : "0.3 years",
+                     "End" : "19:06 20/04/1982 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mercury",
+                     "Start" : "20:37 02/01/1982 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Moon" : {
+               "DurationHours" : 9142.87192420231,
+               "DurationText" : "1.0 years",
+               "End" : "01:16 29/11/1987 +0530",
+               "Lord" : "Moon",
+               "ParentLord" : "Jupiter",
+               "Start" : "02:24 13/11/1986 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1219.04958989364,
+                     "DurationText" : "0.1 years",
+                     "End" : "00:07 24/04/1987 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Moon",
+                     "Start" : "05:04 04/03/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 533.334195578468,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:19 07/09/1987 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Moon",
+                     "Start" : "06:59 16/08/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 533.334195578468,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:39 06/01/1987 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Moon",
+                     "Start" : "20:19 14/12/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1295.24018926199,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:59 16/08/1987 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Moon",
+                     "Start" : "07:45 23/06/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 761.905993683526,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:11 30/12/1987 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Moon",
+                     "Start" : "01:16 29/11/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1371.43078863035,
+                     "DurationText" : "0.2 years",
+                     "End" : "05:04 04/03/1987 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Moon",
+                     "Start" : "01:39 06/01/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1447.6213879987,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:45 23/06/1987 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Moon",
+                     "Start" : "00:07 24/04/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 457.143596210116,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:16 29/11/1987 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Moon",
+                     "Start" : "00:08 10/11/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1523.81198736705,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:08 10/11/1987 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Moon",
+                     "Start" : "12:19 07/09/1987 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Rahu" : {
+               "DurationHours" : 16457.1694635642,
+               "DurationText" : "1.9 years",
+               "End" : "10:27 08/07/1990 +0530",
+               "Lord" : "Rahu",
+               "ParentLord" : "Jupiter",
+               "Start" : "17:17 21/08/1988 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2194.28926180856,
+                     "DurationText" : "0.3 years",
+                     "End" : "00:09 04/03/1989 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Rahu",
+                     "Start" : "13:52 02/12/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 960.001552041243,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:18 04/11/1989 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:18 25/09/1989 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 960.001552041243,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:27 08/07/1990 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Rahu",
+                     "Start" : "10:27 29/05/1990 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2331.43234067159,
+                     "DurationText" : "0.3 years",
+                     "End" : "17:18 25/09/1989 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Rahu",
+                     "Start" : "13:52 20/06/1989 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1371.43078863035,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:27 29/05/1990 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Rahu",
+                     "Start" : "07:01 02/04/1990 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2468.57541953463,
+                     "DurationText" : "0.3 years",
+                     "End" : "13:52 02/12/1988 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:17 21/08/1988 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2605.71849839766,
+                     "DurationText" : "0.3 years",
+                     "End" : "13:52 20/06/1989 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Rahu",
+                     "Start" : "00:09 04/03/1989 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 822.858473178208,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:01 02/04/1990 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Rahu",
+                     "Start" : "00:10 27/02/1990 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2742.86157726069,
+                     "DurationText" : "0.3 years",
+                     "End" : "00:10 27/02/1990 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:18 04/11/1989 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Saturn" : {
+               "DurationHours" : 17371.4566559844,
+               "DurationText" : "2.0 years",
+               "End" : "08:03 26/08/1981 +0530",
+               "Lord" : "Saturn",
+               "ParentLord" : "Jupiter",
+               "Start" : "12:35 02/09/1979 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2316.19422079792,
+                     "DurationText" : "0.3 years",
+                     "End" : "08:03 26/08/1981 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Saturn",
+                     "Start" : "19:51 21/05/1981 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1013.33497159909,
+                     "DurationText" : "0.1 years",
+                     "End" : "21:22 18/05/1980 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "16:01 06/04/1980 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1013.33497159909,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:08 02/02/1981 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Saturn",
+                     "Start" : "00:48 22/12/1980 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2460.95635959779,
+                     "DurationText" : "0.3 years",
+                     "End" : "16:01 06/04/1980 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Saturn",
+                     "Start" : "03:04 26/12/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1447.6213879987,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:48 22/12/1980 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Saturn",
+                     "Start" : "17:10 22/10/1980 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2605.71849839766,
+                     "DurationText" : "0.3 years",
+                     "End" : "19:51 21/05/1981 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "06:08 02/02/1981 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2750.48063719753,
+                     "DurationText" : "0.3 years",
+                     "End" : "03:04 26/12/1979 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Saturn",
+                     "Start" : "12:35 02/09/1979 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 868.57283279922,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:10 22/10/1980 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Saturn",
+                     "Start" : "12:36 16/09/1980 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2895.2427759974,
+                     "DurationText" : "0.3 years",
+                     "End" : "12:36 16/09/1980 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Saturn",
+                     "Start" : "21:22 18/05/1980 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Sun" : {
+               "DurationHours" : 5485.72315452139,
+               "DurationText" : "0.6 years",
+               "End" : "02:24 13/11/1986 +0530",
+               "Lord" : "Sun",
+               "ParentLord" : "Jupiter",
+               "Start" : "12:41 29/03/1986 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 731.429753936185,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:24 16/07/1986 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Sun",
+                     "Start" : "14:58 15/06/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 320.000517347081,
+                     "DurationText" : "0.0 years",
+                     "End" : "00:07 06/10/1986 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Sun",
+                     "Start" : "16:07 22/09/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 320.000517347081,
+                     "DurationText" : "0.0 years",
+                     "End" : "08:07 12/05/1986 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Sun",
+                     "Start" : "00:07 29/04/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 777.144113557197,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:07 22/09/1986 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Sun",
+                     "Start" : "06:58 21/08/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 457.143596210116,
+                     "DurationText" : "0.1 years",
+                     "End" : "00:07 29/04/1986 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Sun",
+                     "Start" : "22:58 09/04/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 822.858473178208,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:58 15/06/1986 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Sun",
+                     "Start" : "08:07 12/05/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 868.57283279922,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:58 21/08/1986 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Sun",
+                     "Start" : "02:24 16/07/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 274.28615772607,
+                     "DurationText" : "0.0 years",
+                     "End" : "12:41 24/11/1986 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Sun",
+                     "Start" : "02:24 13/11/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 914.287192420232,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:24 13/11/1986 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Sun",
+                     "Start" : "00:07 06/10/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Venus" : {
+               "DurationHours" : 18285.7438484046,
+               "DurationText" : "2.1 years",
+               "End" : "12:41 29/03/1986 +0530",
+               "Lord" : "Venus",
+               "ParentLord" : "Jupiter",
+               "Start" : "14:56 26/02/1984 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2438.09917978728,
+                     "DurationText" : "0.3 years",
+                     "End" : "12:17 29/06/1985 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Venus",
+                     "Start" : "22:11 19/03/1985 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1066.66839115694,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:41 29/03/1986 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Venus",
+                     "Start" : "02:01 13/02/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1066.66839115694,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:20 25/11/1984 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Venus",
+                     "Start" : "04:40 12/10/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2590.48037852399,
+                     "DurationText" : "0.3 years",
+                     "End" : "02:01 13/02/1986 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Venus",
+                     "Start" : "03:32 28/10/1985 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1523.81198736705,
+                     "DurationText" : "0.2 years",
+                     "End" : "04:40 12/10/1984 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Venus",
+                     "Start" : "16:51 09/08/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2742.86157726069,
+                     "DurationText" : "0.3 years",
+                     "End" : "22:11 19/03/1985 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Venus",
+                     "Start" : "15:20 25/11/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2895.2427759974,
+                     "DurationText" : "0.3 years",
+                     "End" : "03:32 28/10/1985 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Venus",
+                     "Start" : "12:17 29/06/1985 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 914.287192420231,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:51 09/08/1984 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Venus",
+                     "Start" : "14:34 02/07/1984 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3047.6239747341,
+                     "DurationText" : "0.3 years",
+                     "End" : "12:18 03/08/1986 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Venus",
+                     "Start" : "12:41 29/03/1986 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "JupiterPD1",
+         "Type" : "Mahadasa (Main Period)"
+      },
+      "Ketu" : {
+         "Description" : "Main period of Ketu",
+         "DurationHours" : 61362,
+         "DurationText" : "7.0 years",
+         "End" : "00:00 08/07/2033 +0530",
+         "Lord" : "Ketu",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 08/07/2026 +0530",
+         "SubDasas" : {
+            "Jupiter" : {
+               "DurationHours" : 8181.6,
+               "DurationText" : "0.9 years",
+               "End" : "17:24 01/06/2031 +0530",
+               "Lord" : "Jupiter",
+               "ParentLord" : "Ketu",
+               "Start" : "19:48 25/06/2030 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1090.88,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:41 10/08/2030 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "19:48 25/06/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 477.26,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:25 10/12/2030 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "13:10 20/11/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 477.26,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:10 11/04/2031 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "16:54 22/03/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:10 20/11/2030 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:06 03/10/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 681.8,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:54 22/03/2031 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "07:06 22/02/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1227.24,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:24 01/06/2031 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "14:10 11/04/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:06 03/10/2030 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:41 10/08/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 409.08,
+                     "DurationText" : "0.0 years",
+                     "End" : "07:06 22/02/2031 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:01 05/02/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1363.6,
+                     "DurationText" : "0.2 years",
+                     "End" : "06:01 05/02/2031 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "10:25 10/12/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Ketu" : {
+               "DurationHours" : 3579.45,
+               "DurationText" : "0.4 years",
+               "End" : "21:27 03/12/2033 +0530",
+               "Lord" : "Ketu",
+               "ParentLord" : "Ketu",
+               "Start" : "18:00 07/07/2033 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 477.26,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:37 20/10/2033 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Ketu",
+                     "Start" : "06:22 30/09/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 208.80125,
+                     "DurationText" : "0.0 years",
+                     "End" : "10:48 16/07/2033 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "18:00 07/07/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 208.80125,
+                     "DurationText" : "0.0 years",
+                     "End" : "21:27 07/09/2033 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Ketu",
+                     "Start" : "04:38 30/08/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "21:27 03/12/2033 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Ketu",
+                     "Start" : "18:22 12/11/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 298.2875,
+                     "DurationText" : "0.0 years",
+                     "End" : "04:38 30/08/2033 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Ketu",
+                     "Start" : "18:21 17/08/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 536.9175,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:22 30/09/2033 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "21:27 07/09/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:22 12/11/2033 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Ketu",
+                     "Start" : "03:37 20/10/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 178.9725,
+                     "DurationText" : "0.0 years",
+                     "End" : "18:21 17/08/2033 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Ketu",
+                     "Start" : "07:23 10/08/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 596.575,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:23 10/08/2033 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Ketu",
+                     "Start" : "10:48 16/07/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mars" : {
+               "DurationHours" : 3579.45,
+               "DurationText" : "0.4 years",
+               "End" : "07:30 07/06/2029 +0530",
+               "Lord" : "Mars",
+               "ParentLord" : "Ketu",
+               "Start" : "04:03 09/01/2029 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 477.26,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:02 01/03/2029 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mars",
+                     "Start" : "05:46 09/02/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 208.80125,
+                     "DurationText" : "0.0 years",
+                     "End" : "13:40 23/04/2029 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mars",
+                     "Start" : "20:52 14/04/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 208.80125,
+                     "DurationText" : "0.0 years",
+                     "End" : "20:51 17/01/2029 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mars",
+                     "Start" : "04:03 09/01/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:52 14/04/2029 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mars",
+                     "Start" : "17:47 24/03/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 298.2875,
+                     "DurationText" : "0.0 years",
+                     "End" : "07:30 07/06/2029 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mars",
+                     "Start" : "21:13 25/05/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 536.9175,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:46 09/02/2029 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mars",
+                     "Start" : "20:51 17/01/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:47 24/03/2029 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mars",
+                     "Start" : "03:02 01/03/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 178.9725,
+                     "DurationText" : "0.0 years",
+                     "End" : "21:13 25/05/2029 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mars",
+                     "Start" : "10:15 18/05/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 596.575,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:15 18/05/2029 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mars",
+                     "Start" : "13:40 23/04/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mercury" : {
+               "DurationHours" : 8692.95,
+               "DurationText" : "1.0 years",
+               "End" : "18:00 07/07/2033 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Ketu",
+               "Start" : "13:03 10/07/2032 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:37 11/05/2033 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mercury",
+                     "Start" : "02:34 24/03/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:39 20/09/2032 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "20:33 30/08/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:37 28/01/2033 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mercury",
+                     "Start" : "15:32 07/01/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1231.50125,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:33 30/08/2032 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "13:03 10/07/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:32 07/01/2033 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mercury",
+                     "Start" : "11:07 08/12/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:34 24/03/2033 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "18:37 28/01/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "18:00 07/07/2033 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mercury",
+                     "Start" : "09:37 11/05/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "11:07 08/12/2032 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mercury",
+                     "Start" : "08:28 20/11/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:28 20/11/2032 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mercury",
+                     "Start" : "23:39 20/09/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Moon" : {
+               "DurationHours" : 5113.5,
+               "DurationText" : "0.6 years",
+               "End" : "04:03 09/01/2029 +0530",
+               "Lord" : "Moon",
+               "ParentLord" : "Ketu",
+               "Start" : "02:33 10/06/2028 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 681.8,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:48 08/09/2028 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Moon",
+                     "Start" : "06:00 11/08/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 298.2875,
+                     "DurationText" : "0.0 years",
+                     "End" : "00:08 24/11/2028 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Moon",
+                     "Start" : "13:51 11/11/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 298.2875,
+                     "DurationText" : "0.0 years",
+                     "End" : "06:58 10/07/2028 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Moon",
+                     "Start" : "20:41 27/06/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:51 11/11/2028 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Moon",
+                     "Start" : "09:26 12/10/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 426.125,
+                     "DurationText" : "0.0 years",
+                     "End" : "20:41 27/06/2028 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Moon",
+                     "Start" : "02:33 10/06/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 767.025,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:00 11/08/2028 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Moon",
+                     "Start" : "06:58 10/07/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:26 12/10/2028 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Moon",
+                     "Start" : "15:48 08/09/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 255.675,
+                     "DurationText" : "0.0 years",
+                     "End" : "04:03 09/01/2029 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Moon",
+                     "Start" : "12:23 29/12/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 852.25,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:23 29/12/2028 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Moon",
+                     "Start" : "00:08 24/11/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Rahu" : {
+               "DurationHours" : 9204.3,
+               "DurationText" : "1.1 years",
+               "End" : "19:48 25/06/2030 +0530",
+               "Lord" : "Rahu",
+               "ParentLord" : "Ketu",
+               "Start" : "07:30 07/06/2029 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1227.24,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:23 23/09/2029 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Rahu",
+                     "Start" : "20:09 03/08/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 536.9175,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:36 08/02/2030 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "00:41 17/01/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 536.9175,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:48 25/06/2030 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Rahu",
+                     "Start" : "10:53 03/06/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "00:41 17/01/2030 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Rahu",
+                     "Start" : "16:44 23/11/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 767.025,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:53 03/06/2030 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Rahu",
+                     "Start" : "11:52 02/05/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1380.645,
+                     "DurationText" : "0.2 years",
+                     "End" : "20:09 03/08/2029 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "07:30 07/06/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "16:44 23/11/2029 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Rahu",
+                     "Start" : "23:23 23/09/2029 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 460.215,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:52 02/05/2030 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Rahu",
+                     "Start" : "07:39 13/04/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1534.05,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:39 13/04/2030 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Rahu",
+                     "Start" : "09:36 08/02/2030 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Saturn" : {
+               "DurationHours" : 9715.65,
+               "DurationText" : "1.1 years",
+               "End" : "13:03 10/07/2032 +0530",
+               "Lord" : "Saturn",
+               "ParentLord" : "Ketu",
+               "Start" : "17:24 01/06/2031 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:03 10/07/2032 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Saturn",
+                     "Start" : "13:38 17/05/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:51 24/10/2031 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "04:06 01/10/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:17 17/03/2032 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Saturn",
+                     "Start" : "05:32 23/02/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "04:06 01/10/2031 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Saturn",
+                     "Start" : "19:43 04/08/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:32 23/02/2032 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Saturn",
+                     "Start" : "11:54 20/01/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "13:38 17/05/2032 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "20:17 17/03/2032 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1538.31125,
+                     "DurationText" : "0.2 years",
+                     "End" : "19:43 04/08/2031 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Saturn",
+                     "Start" : "17:24 01/06/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:54 20/01/2032 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Saturn",
+                     "Start" : "06:07 31/12/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "06:07 31/12/2031 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Saturn",
+                     "Start" : "18:51 24/10/2031 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Sun" : {
+               "DurationHours" : 3068.1,
+               "DurationText" : "0.4 years",
+               "End" : "02:33 10/06/2028 +0530",
+               "Lord" : "Sun",
+               "ParentLord" : "Ketu",
+               "Start" : "06:27 03/02/2028 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 409.08,
+                     "DurationText" : "0.0 years",
+                     "End" : "23:48 03/04/2028 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Sun",
+                     "Start" : "22:43 17/03/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 178.9725,
+                     "DurationText" : "0.0 years",
+                     "End" : "19:12 19/05/2028 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Sun",
+                     "Start" : "08:14 12/05/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 178.9725,
+                     "DurationText" : "0.0 years",
+                     "End" : "18:30 27/02/2028 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Sun",
+                     "Start" : "07:32 20/02/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "08:14 12/05/2028 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Sun",
+                     "Start" : "05:35 24/04/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 255.675,
+                     "DurationText" : "0.0 years",
+                     "End" : "07:32 20/02/2028 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Sun",
+                     "Start" : "15:52 09/02/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 460.215,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:43 17/03/2028 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Sun",
+                     "Start" : "18:30 27/02/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:35 24/04/2028 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Sun",
+                     "Start" : "23:48 03/04/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 153.405,
+                     "DurationText" : "0.0 years",
+                     "End" : "15:52 09/02/2028 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Sun",
+                     "Start" : "06:27 03/02/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 511.35,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:33 10/06/2028 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Sun",
+                     "Start" : "19:12 19/05/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Venus" : {
+               "DurationHours" : 10227,
+               "DurationText" : "1.2 years",
+               "End" : "06:27 03/02/2028 +0530",
+               "Lord" : "Venus",
+               "ParentLord" : "Ketu",
+               "Start" : "03:27 04/12/2026 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1363.6,
+                     "DurationText" : "0.2 years",
+                     "End" : "13:47 03/09/2027 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Venus",
+                     "Start" : "18:11 08/07/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 596.575,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:27 03/02/2028 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Venus",
+                     "Start" : "09:53 09/01/2028 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 596.575,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:08 05/05/2027 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Venus",
+                     "Start" : "23:33 10/04/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "09:53 09/01/2028 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Venus",
+                     "Start" : "01:03 10/11/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 852.25,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:33 10/04/2027 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Venus",
+                     "Start" : "11:18 06/03/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1534.05,
+                     "DurationText" : "0.2 years",
+                     "End" : "18:11 08/07/2027 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Venus",
+                     "Start" : "20:08 05/05/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "01:03 10/11/2027 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Venus",
+                     "Start" : "13:47 03/09/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 511.35,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:18 06/03/2027 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Venus",
+                     "Start" : "03:57 13/02/2027 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1704.5,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:57 13/02/2027 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Venus",
+                     "Start" : "03:27 04/12/2026 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "KetuPD1",
+         "Type" : "Mahadasa (Main Period)"
+      },
+      "Mercury" : {
+         "Description" : "Main period of Mercury",
+         "DurationHours" : 149022,
+         "DurationText" : "17.0 years",
+         "End" : "00:00 08/07/2026 +0530",
+         "Lord" : "Mercury",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 08/07/2009 +0530",
+         "SubDasas" : {
+            "Jupiter" : {
+               "DurationHours" : 19869.6,
+               "DurationText" : "2.3 years",
+               "End" : "02:51 29/10/2023 +0530",
+               "Lord" : "Jupiter",
+               "ParentLord" : "Mercury",
+               "Start" : "05:15 23/07/2021 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2649.28,
+                     "DurationText" : "0.3 years",
+                     "End" : "14:32 10/11/2021 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "05:15 23/07/2021 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:28 03/09/2022 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "23:25 16/07/2022 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:25 26/06/2023 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "15:21 09/05/2023 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2814.86,
+                     "DurationText" : "0.3 years",
+                     "End" : "23:25 16/07/2022 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "16:33 21/03/2022 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1655.8,
+                     "DurationText" : "0.2 years",
+                     "End" : "15:21 09/05/2023 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "15:33 01/03/2023 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2980.44,
+                     "DurationText" : "0.3 years",
+                     "End" : "02:51 29/10/2023 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "22:25 26/06/2023 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3146.02,
+                     "DurationText" : "0.4 years",
+                     "End" : "16:33 21/03/2022 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "14:32 10/11/2021 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 993.48,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:33 01/03/2023 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:04 19/01/2023 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3311.6,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:04 19/01/2023 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "06:28 03/09/2022 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Ketu" : {
+               "DurationHours" : 8692.95,
+               "DurationText" : "1.0 years",
+               "End" : "20:24 30/11/2012 +0530",
+               "Lord" : "Ketu",
+               "ParentLord" : "Mercury",
+               "Start" : "15:27 04/12/2011 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:31 14/08/2012 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Ketu",
+                     "Start" : "21:28 26/06/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:33 25/12/2011 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "15:27 04/12/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:31 03/05/2012 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Ketu",
+                     "Start" : "10:26 12/04/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1231.50125,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:24 30/11/2012 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Ketu",
+                     "Start" : "12:54 10/10/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:26 12/04/2012 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Ketu",
+                     "Start" : "06:01 13/03/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "21:28 26/06/2012 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "13:31 03/05/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "12:54 10/10/2012 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Ketu",
+                     "Start" : "04:31 14/08/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "06:01 13/03/2012 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Ketu",
+                     "Start" : "03:22 24/02/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:22 24/02/2012 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Ketu",
+                     "Start" : "18:33 25/12/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mars" : {
+               "DurationHours" : 8692.95,
+               "DurationText" : "1.0 years",
+               "End" : "19:57 03/01/2019 +0530",
+               "Lord" : "Mars",
+               "ParentLord" : "Mercury",
+               "Start" : "15:00 06/01/2018 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1159.06,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:06 10/05/2018 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mars",
+                     "Start" : "02:02 23/03/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:04 17/09/2018 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mars",
+                     "Start" : "00:59 27/08/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 507.08875,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:06 27/01/2018 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mars",
+                     "Start" : "15:00 06/01/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1231.50125,
+                     "DurationText" : "0.1 years",
+                     "End" : "00:59 27/08/2018 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mars",
+                     "Start" : "17:29 06/07/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:57 03/01/2019 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mars",
+                     "Start" : "15:33 04/12/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:02 23/03/2018 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mars",
+                     "Start" : "18:06 27/01/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:29 06/07/2018 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mars",
+                     "Start" : "09:06 10/05/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "15:33 04/12/2018 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mars",
+                     "Start" : "12:54 16/11/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "12:54 16/11/2018 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mars",
+                     "Start" : "04:04 17/09/2018 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mercury" : {
+               "DurationHours" : 21111.45,
+               "DurationText" : "2.4 years",
+               "End" : "15:27 04/12/2011 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Mercury",
+               "Start" : "00:00 08/07/2009 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2814.86,
+                     "DurationText" : "0.3 years",
+                     "End" : "08:49 18/07/2011 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mercury",
+                     "Start" : "01:57 23/03/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1231.50125,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:18 30/12/2009 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "14:48 09/11/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1231.50125,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:14 11/11/2010 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mercury",
+                     "Start" : "19:44 20/09/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2990.78875,
+                     "DurationText" : "0.3 years",
+                     "End" : "14:48 09/11/2009 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "00:00 08/07/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1759.2875,
+                     "DurationText" : "0.2 years",
+                     "End" : "19:44 20/09/2010 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mercury",
+                     "Start" : "12:27 09/07/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3166.7175,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:57 23/03/2011 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "03:14 11/11/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3342.64625,
+                     "DurationText" : "0.4 years",
+                     "End" : "15:27 04/12/2011 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mercury",
+                     "Start" : "08:49 18/07/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1055.5725,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:27 09/07/2010 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mercury",
+                     "Start" : "12:52 26/05/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3518.575,
+                     "DurationText" : "0.4 years",
+                     "End" : "12:52 26/05/2010 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mercury",
+                     "Start" : "22:18 30/12/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Moon" : {
+               "DurationHours" : 12418.5,
+               "DurationText" : "1.4 years",
+               "End" : "15:00 06/01/2018 +0530",
+               "Lord" : "Moon",
+               "ParentLord" : "Mercury",
+               "Start" : "04:30 07/08/2016 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1655.8,
+                     "DurationText" : "0.2 years",
+                     "End" : "02:22 15/03/2017 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Moon",
+                     "Start" : "02:34 05/01/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:20 16/09/2017 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Moon",
+                     "Start" : "07:55 17/08/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 724.4125,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:48 19/10/2016 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Moon",
+                     "Start" : "07:23 19/09/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1759.2875,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:55 17/08/2017 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Moon",
+                     "Start" : "00:38 05/06/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1034.875,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:23 19/09/2016 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Moon",
+                     "Start" : "04:30 07/08/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1862.775,
+                     "DurationText" : "0.2 years",
+                     "End" : "02:34 05/01/2017 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Moon",
+                     "Start" : "11:48 19/10/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1966.2625,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:38 05/06/2017 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Moon",
+                     "Start" : "02:22 15/03/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 620.925,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:00 06/01/2018 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Moon",
+                     "Start" : "18:05 11/12/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2069.75,
+                     "DurationText" : "0.2 years",
+                     "End" : "18:05 11/12/2017 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Moon",
+                     "Start" : "12:20 16/09/2017 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Rahu" : {
+               "DurationHours" : 22353.3,
+               "DurationText" : "2.6 years",
+               "End" : "05:15 23/07/2021 +0530",
+               "Lord" : "Rahu",
+               "ParentLord" : "Mercury",
+               "Start" : "19:57 03/01/2019 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2980.44,
+                     "DurationText" : "0.3 years",
+                     "End" : "17:23 24/09/2019 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Rahu",
+                     "Start" : "12:57 23/05/2019 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:19 23/08/2020 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "03:23 30/06/2020 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1303.9425,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:15 23/07/2021 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Rahu",
+                     "Start" : "21:19 29/05/2021 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3166.7175,
+                     "DurationText" : "0.4 years",
+                     "End" : "03:23 30/06/2020 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Rahu",
+                     "Start" : "04:40 19/02/2020 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1862.775,
+                     "DurationText" : "0.2 years",
+                     "End" : "21:19 29/05/2021 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Rahu",
+                     "Start" : "06:32 13/03/2021 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3352.995,
+                     "DurationText" : "0.4 years",
+                     "End" : "12:57 23/05/2019 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "19:57 03/01/2019 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3539.2725,
+                     "DurationText" : "0.4 years",
+                     "End" : "04:40 19/02/2020 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:23 24/09/2019 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1117.665,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:32 13/03/2021 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Rahu",
+                     "Start" : "16:52 25/01/2021 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3725.55,
+                     "DurationText" : "0.4 years",
+                     "End" : "16:52 25/01/2021 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Rahu",
+                     "Start" : "11:19 23/08/2020 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Saturn" : {
+               "DurationHours" : 23595.15,
+               "DurationText" : "2.7 years",
+               "End" : "06:00 08/07/2026 +0530",
+               "Lord" : "Saturn",
+               "ParentLord" : "Mercury",
+               "Start" : "02:51 29/10/2023 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3146.02,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:00 08/07/2026 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Saturn",
+                     "Start" : "03:59 27/02/2026 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "09:47 15/10/2024 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "01:24 19/08/2024 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "16:43 02/10/2025 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Saturn",
+                     "Start" : "08:20 06/08/2025 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3342.64625,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:24 19/08/2024 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Saturn",
+                     "Start" : "18:45 01/04/2024 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1966.2625,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:20 06/08/2025 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Saturn",
+                     "Start" : "10:04 16/05/2025 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3539.2725,
+                     "DurationText" : "0.4 years",
+                     "End" : "03:59 27/02/2026 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "16:43 02/10/2025 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3735.89875,
+                     "DurationText" : "0.4 years",
+                     "End" : "18:45 01/04/2024 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Saturn",
+                     "Start" : "02:51 29/10/2023 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1179.7575,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:04 16/05/2025 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Saturn",
+                     "Start" : "06:19 28/03/2025 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3932.525,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:19 28/03/2025 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Saturn",
+                     "Start" : "09:47 15/10/2024 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Sun" : {
+               "DurationHours" : 7451.1,
+               "DurationText" : "0.9 years",
+               "End" : "04:30 07/08/2016 +0530",
+               "Lord" : "Sun",
+               "ParentLord" : "Mercury",
+               "Start" : "17:24 01/10/2015 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 993.48,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:41 26/02/2016 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Sun",
+                     "Start" : "19:12 15/01/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "10:39 16/06/2016 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Sun",
+                     "Start" : "08:00 29/05/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 434.6475,
+                     "DurationText" : "0.0 years",
+                     "End" : "05:32 30/11/2015 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Sun",
+                     "Start" : "02:53 12/11/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1055.5725,
+                     "DurationText" : "0.1 years",
+                     "End" : "08:00 29/05/2016 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Sun",
+                     "Start" : "08:26 15/04/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 620.925,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:53 12/11/2015 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Sun",
+                     "Start" : "05:58 17/10/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1117.665,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:12 15/01/2016 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Sun",
+                     "Start" : "05:32 30/11/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1179.7575,
+                     "DurationText" : "0.1 years",
+                     "End" : "08:26 15/04/2016 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Sun",
+                     "Start" : "04:41 26/02/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 372.555,
+                     "DurationText" : "0.0 years",
+                     "End" : "05:58 17/10/2015 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Sun",
+                     "Start" : "17:24 01/10/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1241.85,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:30 07/08/2016 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Sun",
+                     "Start" : "10:39 16/06/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Venus" : {
+               "DurationHours" : 24837,
+               "DurationText" : "2.8 years",
+               "End" : "17:24 01/10/2015 +0530",
+               "Lord" : "Venus",
+               "ParentLord" : "Mercury",
+               "Start" : "20:24 30/11/2012 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3311.6,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:29 25/09/2014 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Venus",
+                     "Start" : "21:53 10/05/2014 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:24 01/10/2015 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Venus",
+                     "Start" : "08:35 02/08/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1448.825,
+                     "DurationText" : "0.2 years",
+                     "End" : "16:20 06/12/2013 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Venus",
+                     "Start" : "07:30 07/10/2013 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3518.575,
+                     "DurationText" : "0.4 years",
+                     "End" : "08:35 02/08/2015 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Venus",
+                     "Start" : "18:00 08/03/2015 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2069.75,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:30 07/10/2013 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Venus",
+                     "Start" : "01:45 13/07/2013 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3725.55,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:53 10/05/2014 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Venus",
+                     "Start" : "16:20 06/12/2013 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3932.525,
+                     "DurationText" : "0.4 years",
+                     "End" : "18:00 08/03/2015 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Venus",
+                     "Start" : "21:29 25/09/2014 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1241.85,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:45 13/07/2013 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Venus",
+                     "Start" : "07:54 22/05/2013 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4139.5,
+                     "DurationText" : "0.5 years",
+                     "End" : "07:54 22/05/2013 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Venus",
+                     "Start" : "20:24 30/11/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "MercuryPD1",
+         "Type" : "Mahadasa (Main Period)"
+      },
+      "Saturn" : {
+         "Description" : "Main period of Saturn",
+         "DurationHours" : 166554,
+         "DurationText" : "19.0 years",
+         "End" : "00:00 08/07/2009 +0530",
+         "Lord" : "Saturn",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 08/07/1990 +0530",
+         "SubDasas" : {
+            "Jupiter" : {
+               "DurationHours" : 22207.2,
+               "DurationText" : "2.5 years",
+               "End" : "18:00 07/07/2009 +0530",
+               "Lord" : "Jupiter",
+               "ParentLord" : "Saturn",
+               "Start" : "10:48 25/12/2006 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2960.96,
+                     "DurationText" : "0.3 years",
+                     "End" : "19:46 27/04/2007 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "10:48 25/12/2006 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:21 24/03/2008 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "09:55 30/01/2008 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:55 18/02/2009 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "23:30 26/12/2008 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3146.02,
+                     "DurationText" : "0.4 years",
+                     "End" : "09:55 30/01/2008 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "07:54 21/09/2007 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1850.6,
+                     "DurationText" : "0.2 years",
+                     "End" : "23:30 26/12/2008 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "20:54 10/10/2008 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3331.08,
+                     "DurationText" : "0.4 years",
+                     "End" : "18:00 07/07/2009 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "22:55 18/02/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3516.14,
+                     "DurationText" : "0.4 years",
+                     "End" : "07:54 21/09/2007 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "19:46 27/04/2007 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1110.36,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:54 10/10/2008 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "14:33 25/08/2008 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3701.2,
+                     "DurationText" : "0.4 years",
+                     "End" : "14:33 25/08/2008 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "09:21 24/03/2008 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Ketu" : {
+               "DurationHours" : 9715.65,
+               "DurationText" : "1.1 years",
+               "End" : "17:51 28/04/1997 +0530",
+               "Lord" : "Ketu",
+               "ParentLord" : "Saturn",
+               "Start" : "22:12 19/03/1996 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:10 28/12/1996 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Ketu",
+                     "Start" : "07:44 04/11/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:57 12/04/1996 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "22:12 19/03/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:24 04/09/1996 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Ketu",
+                     "Start" : "23:39 11/08/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:51 28/04/1997 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Ketu",
+                     "Start" : "09:28 02/03/1997 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:39 11/08/1996 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Ketu",
+                     "Start" : "06:01 09/07/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:44 04/11/1996 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "14:24 04/09/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1538.31125,
+                     "DurationText" : "0.2 years",
+                     "End" : "09:28 02/03/1997 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Ketu",
+                     "Start" : "07:10 28/12/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:01 09/07/1996 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Ketu",
+                     "Start" : "00:14 19/06/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:14 19/06/1996 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Ketu",
+                     "Start" : "12:57 12/04/1996 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mars" : {
+               "DurationHours" : 9715.65,
+               "DurationText" : "1.1 years",
+               "End" : "11:42 18/02/2004 +0530",
+               "Lord" : "Mars",
+               "ParentLord" : "Saturn",
+               "Start" : "16:03 09/01/2003 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1295.42,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:34 27/05/2003 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mars",
+                     "Start" : "00:09 04/04/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:01 20/10/2003 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mars",
+                     "Start" : "10:16 26/09/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 566.74625,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:48 02/02/2003 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mars",
+                     "Start" : "16:03 09/01/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:16 26/09/2003 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mars",
+                     "Start" : "01:53 31/07/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "11:42 18/02/2004 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mars",
+                     "Start" : "18:04 15/01/2004 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:09 04/04/2003 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mars",
+                     "Start" : "06:48 02/02/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1538.31125,
+                     "DurationText" : "0.2 years",
+                     "End" : "01:53 31/07/2003 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mars",
+                     "Start" : "23:34 27/05/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:04 15/01/2004 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mars",
+                     "Start" : "12:17 26/12/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "12:17 26/12/2003 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mars",
+                     "Start" : "01:01 20/10/2003 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mercury" : {
+               "DurationHours" : 23595.15,
+               "DurationText" : "2.7 years",
+               "End" : "22:12 19/03/1996 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Saturn",
+               "Start" : "19:03 10/07/1993 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3146.02,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:18 16/10/1995 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mercury",
+                     "Start" : "04:17 07/06/1995 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:05 23/01/1994 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "01:42 27/11/1993 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1376.38375,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:01 10/01/1995 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mercury",
+                     "Start" : "08:38 14/11/1994 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3342.64625,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:42 27/11/1993 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "19:03 10/07/1993 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1966.2625,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:38 14/11/1994 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mercury",
+                     "Start" : "10:22 24/08/1994 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3539.2725,
+                     "DurationText" : "0.4 years",
+                     "End" : "04:17 07/06/1995 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "17:01 10/01/1995 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3735.89875,
+                     "DurationText" : "0.4 years",
+                     "End" : "22:12 19/03/1996 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mercury",
+                     "Start" : "06:18 16/10/1995 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1179.7575,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:22 24/08/1994 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mercury",
+                     "Start" : "06:37 06/07/1994 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3932.525,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:37 06/07/1994 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mercury",
+                     "Start" : "10:05 23/01/1994 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Moon" : {
+               "DurationHours" : 13879.5,
+               "DurationText" : "1.6 years",
+               "End" : "16:03 09/01/2003 +0530",
+               "Lord" : "Moon",
+               "ParentLord" : "Saturn",
+               "Start" : "08:33 10/06/2001 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1850.6,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:21 11/02/2002 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Moon",
+                     "Start" : "00:45 26/11/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "08:50 06/09/2002 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Moon",
+                     "Start" : "15:12 03/08/2002 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 809.6375,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:49 31/08/2001 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Moon",
+                     "Start" : "13:11 28/07/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1966.2625,
+                     "DurationText" : "0.2 years",
+                     "End" : "15:12 03/08/2002 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Moon",
+                     "Start" : "16:56 13/05/2002 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1156.625,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:11 28/07/2001 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Moon",
+                     "Start" : "08:33 10/06/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 2081.925,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:45 26/11/2001 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Moon",
+                     "Start" : "06:49 31/08/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2197.5875,
+                     "DurationText" : "0.3 years",
+                     "End" : "16:56 13/05/2002 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Moon",
+                     "Start" : "03:21 11/02/2002 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 693.975,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:03 09/01/2003 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Moon",
+                     "Start" : "18:05 11/12/2002 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2313.25,
+                     "DurationText" : "0.3 years",
+                     "End" : "18:05 11/12/2002 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Moon",
+                     "Start" : "08:50 06/09/2002 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Rahu" : {
+               "DurationHours" : 24983.1,
+               "DurationText" : "2.9 years",
+               "End" : "10:48 25/12/2006 +0530",
+               "Lord" : "Rahu",
+               "ParentLord" : "Saturn",
+               "Start" : "11:42 18/02/2004 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3331.08,
+                     "DurationText" : "0.4 years",
+                     "End" : "10:15 09/12/2004 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Rahu",
+                     "Start" : "15:10 23/07/2004 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:32 17/12/2005 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:11 17/10/2005 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1457.3475,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:48 25/12/2006 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:27 25/10/2006 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3539.2725,
+                     "DurationText" : "0.4 years",
+                     "End" : "17:11 17/10/2005 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Rahu",
+                     "Start" : "05:54 23/05/2005 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2081.925,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:27 25/10/2006 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Rahu",
+                     "Start" : "23:32 30/07/2006 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3747.465,
+                     "DurationText" : "0.4 years",
+                     "End" : "15:10 23/07/2004 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "11:42 18/02/2004 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3955.6575,
+                     "DurationText" : "0.5 years",
+                     "End" : "05:54 23/05/2005 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Rahu",
+                     "Start" : "10:15 09/12/2004 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1249.155,
+                     "DurationText" : "0.1 years",
+                     "End" : "23:32 30/07/2006 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Rahu",
+                     "Start" : "22:23 08/06/2006 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4163.85,
+                     "DurationText" : "0.5 years",
+                     "End" : "22:23 08/06/2006 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Rahu",
+                     "Start" : "10:32 17/12/2005 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Saturn" : {
+               "DurationHours" : 26371.05,
+               "DurationText" : "3.0 years",
+               "End" : "13:03 10/07/2012 +0530",
+               "Lord" : "Saturn",
+               "ParentLord" : "Saturn",
+               "Start" : "18:00 07/07/2009 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3516.14,
+                     "DurationText" : "0.4 years",
+                     "End" : "13:03 10/07/2012 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Saturn",
+                     "Start" : "00:55 15/02/2012 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1538.31125,
+                     "DurationText" : "0.2 years",
+                     "End" : "11:38 05/08/2010 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "09:19 02/06/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1538.31125,
+                     "DurationText" : "0.2 years",
+                     "End" : "05:15 03/09/2011 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Saturn",
+                     "Start" : "02:57 01/07/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3735.89875,
+                     "DurationText" : "0.4 years",
+                     "End" : "09:19 02/06/2010 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Saturn",
+                     "Start" : "17:25 28/12/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2197.5875,
+                     "DurationText" : "0.3 years",
+                     "End" : "02:57 01/07/2011 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Saturn",
+                     "Start" : "13:22 31/03/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3955.6575,
+                     "DurationText" : "0.5 years",
+                     "End" : "00:55 15/02/2012 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "05:15 03/09/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 4175.41625,
+                     "DurationText" : "0.5 years",
+                     "End" : "17:25 28/12/2009 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Saturn",
+                     "Start" : "18:00 07/07/2009 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1318.5525,
+                     "DurationText" : "0.2 years",
+                     "End" : "13:22 31/03/2011 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Saturn",
+                     "Start" : "14:48 04/02/2011 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4395.175,
+                     "DurationText" : "0.5 years",
+                     "End" : "14:48 04/02/2011 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Saturn",
+                     "Start" : "11:38 05/08/2010 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Sun" : {
+               "DurationHours" : 8327.7,
+               "DurationText" : "1.0 years",
+               "End" : "08:33 10/06/2001 +0530",
+               "Lord" : "Sun",
+               "ParentLord" : "Saturn",
+               "Start" : "08:51 28/06/2000 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1110.36,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:31 10/12/2000 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Sun",
+                     "Start" : "22:09 24/10/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "12:36 13/04/2001 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Sun",
+                     "Start" : "06:49 24/03/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 485.7825,
+                     "DurationText" : "0.1 years",
+                     "End" : "21:00 02/09/2000 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Sun",
+                     "Start" : "15:13 13/08/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1179.7575,
+                     "DurationText" : "0.1 years",
+                     "End" : "06:49 24/03/2001 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Sun",
+                     "Start" : "03:04 03/02/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 693.975,
+                     "DurationText" : "0.1 years",
+                     "End" : "15:13 13/08/2000 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Sun",
+                     "Start" : "17:14 15/07/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1249.155,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:09 24/10/2000 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Sun",
+                     "Start" : "21:00 02/09/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1318.5525,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:04 03/02/2001 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Sun",
+                     "Start" : "04:31 10/12/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 416.385,
+                     "DurationText" : "0.0 years",
+                     "End" : "17:14 15/07/2000 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Sun",
+                     "Start" : "08:51 28/06/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1387.95,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:33 10/06/2001 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Sun",
+                     "Start" : "12:36 13/04/2001 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Venus" : {
+               "DurationHours" : 27759,
+               "DurationText" : "3.2 years",
+               "End" : "08:51 28/06/2000 +0530",
+               "Lord" : "Venus",
+               "ParentLord" : "Saturn",
+               "Start" : "17:51 28/04/1997 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3701.2,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:53 10/05/1999 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Venus",
+                     "Start" : "16:41 07/12/1998 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:51 28/06/2000 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Venus",
+                     "Start" : "21:35 21/04/2000 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1619.275,
+                     "DurationText" : "0.2 years",
+                     "End" : "04:50 17/06/1998 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Venus",
+                     "Start" : "17:33 10/04/1998 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3932.525,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:35 21/04/2000 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Venus",
+                     "Start" : "01:03 10/11/1999 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2313.25,
+                     "DurationText" : "0.3 years",
+                     "End" : "17:33 10/04/1998 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Venus",
+                     "Start" : "08:18 04/01/1998 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 4163.85,
+                     "DurationText" : "0.5 years",
+                     "End" : "16:41 07/12/1998 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Venus",
+                     "Start" : "04:50 17/06/1998 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 4395.175,
+                     "DurationText" : "0.5 years",
+                     "End" : "01:03 10/11/1999 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Venus",
+                     "Start" : "21:53 10/05/1999 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1387.95,
+                     "DurationText" : "0.2 years",
+                     "End" : "08:18 04/01/1998 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Venus",
+                     "Start" : "12:21 07/11/1997 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4626.5,
+                     "DurationText" : "0.5 years",
+                     "End" : "12:21 07/11/1997 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Venus",
+                     "Start" : "17:51 28/04/1997 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "SaturnPD1",
+         "Type" : "Mahadasa (Main Period)"
+      },
+      "Venus" : {
+         "Description" : "Main period of Venus",
+         "DurationHours" : 153235.536909572,
+         "DurationText" : "17.5 years",
+         "End" : "00:00 31/12/2050 +0530",
+         "Lord" : "Venus",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 08/07/2033 +0530",
+         "SubDasas" : {
+            "Jupiter" : {
+               "DurationHours" : 20431.4049212763,
+               "DurationText" : "2.3 years",
+               "End" : "22:08 24/09/2044 +0530",
+               "Lord" : "Jupiter",
+               "ParentLord" : "Venus",
+               "Start" : "14:44 27/05/2042 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2724.18732283684,
+                     "DurationText" : "0.3 years",
+                     "End" : "02:55 18/09/2042 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "14:44 27/05/2042 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1191.83195374112,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:11 20/07/2043 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "12:21 31/05/2043 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1191.83195374112,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:26 20/05/2044 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "13:36 31/03/2044 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 2894.44903051414,
+                     "DurationText" : "0.3 years",
+                     "End" : "12:21 31/05/2043 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "21:54 30/01/2043 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1702.61707677302,
+                     "DurationText" : "0.2 years",
+                     "End" : "13:36 31/03/2044 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "14:59 20/01/2044 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3064.71073819144,
+                     "DurationText" : "0.3 years",
+                     "End" : "22:08 24/09/2044 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "05:26 20/05/2044 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3234.97244586875,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:54 30/01/2043 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "02:55 18/09/2042 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1021.57024606381,
+                     "DurationText" : "0.1 years",
+                     "End" : "14:59 20/01/2044 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "01:25 09/12/2043 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3405.23415354605,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:25 09/12/2043 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Jupiter",
+                     "Start" : "04:11 20/07/2043 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Ketu" : {
+               "DurationHours" : 8938.73965305838,
+               "DurationText" : "1.0 years",
+               "End" : "19:33 30/12/2050 +0530",
+               "Lord" : "Ketu",
+               "ParentLord" : "Venus",
+               "Start" : "08:48 23/12/2049 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1191.83195374112,
+                     "DurationText" : "0.1 years",
+                     "End" : "01:55 10/09/2050 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Ketu",
+                     "Start" : "10:05 22/07/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 521.426479761739,
+                     "DurationText" : "0.1 years",
+                     "End" : "02:14 14/01/2050 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "08:48 23/12/2049 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 521.426479761739,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:17 27/05/2050 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Ketu",
+                     "Start" : "19:51 05/05/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1266.32145084994,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:33 30/12/2050 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Ketu",
+                     "Start" : "01:13 08/11/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 744.894971088198,
+                     "DurationText" : "0.1 years",
+                     "End" : "19:51 05/05/2050 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Ketu",
+                     "Start" : "18:57 04/04/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1340.81094795876,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:05 22/07/2050 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Ketu",
+                     "Start" : "13:17 27/05/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1415.30044506758,
+                     "DurationText" : "0.2 years",
+                     "End" : "01:13 08/11/2050 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Ketu",
+                     "Start" : "01:55 10/09/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 446.936982652919,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:57 04/04/2050 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Ketu",
+                     "Start" : "04:01 17/03/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1489.7899421764,
+                     "DurationText" : "0.2 years",
+                     "End" : "04:01 17/03/2050 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Ketu",
+                     "Start" : "02:14 14/01/2050 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mars" : {
+               "DurationHours" : 8938.73965305838,
+               "DurationText" : "1.0 years",
+               "End" : "21:24 12/10/2039 +0530",
+               "Lord" : "Mars",
+               "ParentLord" : "Venus",
+               "Start" : "10:40 05/10/2038 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1191.83195374112,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:44 09/02/2039 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mars",
+                     "Start" : "00:54 22/12/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 521.426479761739,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:47 23/06/2039 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mars",
+                     "Start" : "10:21 01/06/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 521.426479761739,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:06 27/10/2038 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mars",
+                     "Start" : "10:40 05/10/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1266.32145084994,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:21 01/06/2039 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mars",
+                     "Start" : "16:02 09/04/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 744.894971088198,
+                     "DurationText" : "0.1 years",
+                     "End" : "21:24 12/10/2039 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mars",
+                     "Start" : "20:31 11/09/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1340.81094795876,
+                     "DurationText" : "0.2 years",
+                     "End" : "00:54 22/12/2038 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mars",
+                     "Start" : "04:06 27/10/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1415.30044506758,
+                     "DurationText" : "0.2 years",
+                     "End" : "16:02 09/04/2039 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mars",
+                     "Start" : "16:44 09/02/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 446.936982652919,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:31 11/09/2039 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mars",
+                     "Start" : "05:34 24/08/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1489.7899421764,
+                     "DurationText" : "0.2 years",
+                     "End" : "05:34 24/08/2039 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mars",
+                     "Start" : "03:47 23/06/2039 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Mercury" : {
+               "DurationHours" : 21708.3677288561,
+               "DurationText" : "2.5 years",
+               "End" : "08:48 23/12/2049 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Venus",
+               "Start" : "20:26 02/07/2047 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 2894.44903051414,
+                     "DurationText" : "0.3 years",
+                     "End" : "03:39 02/08/2049 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Mercury",
+                     "Start" : "13:12 03/04/2049 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1266.32145084994,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:06 30/12/2047 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "23:47 07/11/2047 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1266.32145084994,
+                     "DurationText" : "0.1 years",
+                     "End" : "20:56 18/11/2048 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Mercury",
+                     "Start" : "02:37 27/09/2048 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3075.35209492128,
+                     "DurationText" : "0.4 years",
+                     "End" : "23:47 07/11/2047 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "20:26 02/07/2047 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1809.03064407134,
+                     "DurationText" : "0.2 years",
+                     "End" : "02:37 27/09/2048 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Mercury",
+                     "Start" : "17:35 13/07/2048 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3256.25515932841,
+                     "DurationText" : "0.4 years",
+                     "End" : "13:12 03/04/2049 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Mercury",
+                     "Start" : "20:56 18/11/2048 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3437.15822373554,
+                     "DurationText" : "0.4 years",
+                     "End" : "08:48 23/12/2049 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Mercury",
+                     "Start" : "03:39 02/08/2049 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1085.4183864428,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:35 13/07/2048 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Mercury",
+                     "Start" : "12:10 29/05/2048 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3618.06128814268,
+                     "DurationText" : "0.4 years",
+                     "End" : "12:10 29/05/2048 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Mercury",
+                     "Start" : "18:06 30/12/2047 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Moon" : {
+               "DurationHours" : 12769.6280757977,
+               "DurationText" : "1.5 years",
+               "End" : "10:40 05/10/2038 +0530",
+               "Lord" : "Moon",
+               "ParentLord" : "Venus",
+               "Start" : "09:02 21/04/2037 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1702.61707677302,
+                     "DurationText" : "0.2 years",
+                     "End" : "12:08 03/12/2037 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Moon",
+                     "Start" : "13:31 23/09/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 744.894971088198,
+                     "DurationText" : "0.1 years",
+                     "End" : "03:55 12/06/2038 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Moon",
+                     "Start" : "03:01 12/05/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 744.894971088198,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:04 05/07/2037 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Moon",
+                     "Start" : "17:10 04/06/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1809.03064407134,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:01 12/05/2038 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Moon",
+                     "Start" : "17:59 25/02/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1064.13567298314,
+                     "DurationText" : "0.1 years",
+                     "End" : "17:10 04/06/2037 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Moon",
+                     "Start" : "09:02 21/04/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1915.44421136965,
+                     "DurationText" : "0.2 years",
+                     "End" : "13:31 23/09/2037 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Moon",
+                     "Start" : "18:04 05/07/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 2021.85777866797,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:59 25/02/2038 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Moon",
+                     "Start" : "12:08 03/12/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 638.481403789884,
+                     "DurationText" : "0.1 years",
+                     "End" : "10:40 05/10/2038 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Moon",
+                     "Start" : "20:11 08/09/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 2128.27134596628,
+                     "DurationText" : "0.2 years",
+                     "End" : "20:11 08/09/2038 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Moon",
+                     "Start" : "03:55 12/06/2038 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Rahu" : {
+               "DurationHours" : 22985.3305364358,
+               "DurationText" : "2.6 years",
+               "End" : "14:44 27/05/2042 +0530",
+               "Lord" : "Rahu",
+               "ParentLord" : "Venus",
+               "Start" : "21:24 12/10/2039 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3064.71073819144,
+                     "DurationText" : "0.3 years",
+                     "End" : "05:55 10/07/2040 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Rahu",
+                     "Start" : "13:12 04/03/2040 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1340.81094795876,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:20 18/06/2041 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "13:31 23/04/2041 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1340.81094795876,
+                     "DurationText" : "0.2 years",
+                     "End" : "14:44 27/05/2042 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Rahu",
+                     "Start" : "17:56 01/04/2042 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3256.25515932841,
+                     "DurationText" : "0.4 years",
+                     "End" : "13:31 23/04/2041 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Rahu",
+                     "Start" : "21:16 08/12/2040 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 1915.44421136965,
+                     "DurationText" : "0.2 years",
+                     "End" : "17:56 01/04/2042 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Rahu",
+                     "Start" : "22:29 11/01/2042 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3447.79958046538,
+                     "DurationText" : "0.4 years",
+                     "End" : "06:32 18/10/2042 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Rahu",
+                     "Start" : "14:44 27/05/2042 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3639.34400160234,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:16 08/12/2040 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Rahu",
+                     "Start" : "05:55 10/07/2040 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1149.26652682179,
+                     "DurationText" : "0.1 years",
+                     "End" : "22:29 11/01/2042 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Rahu",
+                     "Start" : "01:13 25/11/2041 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 3830.88842273931,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:13 25/11/2041 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Rahu",
+                     "Start" : "10:20 18/06/2041 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Saturn" : {
+               "DurationHours" : 24262.2933440156,
+               "DurationText" : "2.8 years",
+               "End" : "20:26 02/07/2047 +0530",
+               "Lord" : "Saturn",
+               "ParentLord" : "Venus",
+               "Start" : "22:08 24/09/2044 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3234.97244586875,
+                     "DurationText" : "0.4 years",
+                     "End" : "20:26 02/07/2047 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Saturn",
+                     "Start" : "01:28 18/02/2047 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1415.30044506758,
+                     "DurationText" : "0.2 years",
+                     "End" : "04:08 22/09/2045 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "04:50 25/07/2045 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1415.30044506758,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:07 19/09/2046 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Saturn",
+                     "Start" : "10:49 22/07/2046 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3437.15822373554,
+                     "DurationText" : "0.4 years",
+                     "End" : "04:50 25/07/2045 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Saturn",
+                     "Start" : "23:40 03/03/2045 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2021.85777866797,
+                     "DurationText" : "0.2 years",
+                     "End" : "10:49 22/07/2046 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Saturn",
+                     "Start" : "04:58 29/04/2046 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3639.34400160234,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:28 18/02/2047 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Saturn",
+                     "Start" : "10:07 19/09/2046 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 3841.52977946914,
+                     "DurationText" : "0.4 years",
+                     "End" : "21:58 09/12/2047 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Saturn",
+                     "Start" : "20:26 02/07/2047 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1213.11466720078,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:58 29/04/2046 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Saturn",
+                     "Start" : "15:51 09/03/2046 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4043.71555733593,
+                     "DurationText" : "0.5 years",
+                     "End" : "15:51 09/03/2046 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Saturn",
+                     "Start" : "04:08 22/09/2045 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Sun" : {
+               "DurationHours" : 7661.77684547861,
+               "DurationText" : "0.9 years",
+               "End" : "09:02 21/04/2037 +0530",
+               "Lord" : "Sun",
+               "ParentLord" : "Venus",
+               "Start" : "03:16 06/06/2036 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 1021.57024606381,
+                     "DurationText" : "0.1 years",
+                     "End" : "18:36 04/11/2036 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Sun",
+                     "Start" : "05:02 23/09/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 446.936982652919,
+                     "DurationText" : "0.1 years",
+                     "End" : "04:04 27/02/2037 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Sun",
+                     "Start" : "13:08 08/02/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 446.936982652919,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:46 06/08/2036 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Sun",
+                     "Start" : "16:50 18/07/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 1085.4183864428,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:08 08/02/2037 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Sun",
+                     "Start" : "07:43 25/12/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 638.481403789884,
+                     "DurationText" : "0.1 years",
+                     "End" : "16:50 18/07/2036 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Sun",
+                     "Start" : "02:21 22/06/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 1149.26652682179,
+                     "DurationText" : "0.1 years",
+                     "End" : "05:02 23/09/2036 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Sun",
+                     "Start" : "07:46 06/08/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 1213.11466720078,
+                     "DurationText" : "0.1 years",
+                     "End" : "07:43 25/12/2036 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Sun",
+                     "Start" : "18:36 04/11/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 383.088842273931,
+                     "DurationText" : "0.0 years",
+                     "End" : "02:21 22/06/2036 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Sun",
+                     "Start" : "03:16 06/06/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 1276.96280757977,
+                     "DurationText" : "0.1 years",
+                     "End" : "09:02 21/04/2037 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Sun",
+                     "Start" : "04:04 27/02/2037 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            },
+            "Venus" : {
+               "DurationHours" : 25539.2561515954,
+               "DurationText" : "2.9 years",
+               "End" : "03:16 06/06/2036 +0530",
+               "Lord" : "Venus",
+               "ParentLord" : "Venus",
+               "Start" : "00:00 08/07/2033 +0530",
+               "SubDasas" : {
+                  "Jupiter" : {
+                     "DurationHours" : 3405.23415354605,
+                     "DurationText" : "0.4 years",
+                     "End" : "19:42 21/05/2035 +0530",
+                     "Lord" : "Jupiter",
+                     "ParentLord" : "Venus",
+                     "Start" : "22:28 30/12/2034 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Ketu" : {
+                     "DurationHours" : 1489.7899421764,
+                     "DurationText" : "0.2 years",
+                     "End" : "03:16 06/06/2036 +0530",
+                     "Lord" : "Ketu",
+                     "ParentLord" : "Venus",
+                     "Start" : "01:28 05/04/2036 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mars" : {
+                     "DurationHours" : 1489.7899421764,
+                     "DurationText" : "0.2 years",
+                     "End" : "07:34 24/07/2034 +0530",
+                     "Lord" : "Mars",
+                     "ParentLord" : "Venus",
+                     "Start" : "05:47 23/05/2034 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Mercury" : {
+                     "DurationHours" : 3618.06128814268,
+                     "DurationText" : "0.4 years",
+                     "End" : "01:28 05/04/2036 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Venus",
+                     "Start" : "07:25 06/11/2035 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Moon" : {
+                     "DurationHours" : 2128.27134596628,
+                     "DurationText" : "0.2 years",
+                     "End" : "05:47 23/05/2034 +0530",
+                     "Lord" : "Moon",
+                     "ParentLord" : "Venus",
+                     "Start" : "13:31 23/02/2034 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Rahu" : {
+                     "DurationHours" : 3830.88842273931,
+                     "DurationText" : "0.4 years",
+                     "End" : "22:28 30/12/2034 +0530",
+                     "Lord" : "Rahu",
+                     "ParentLord" : "Venus",
+                     "Start" : "07:34 24/07/2034 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Saturn" : {
+                     "DurationHours" : 4043.71555733593,
+                     "DurationText" : "0.5 years",
+                     "End" : "07:25 06/11/2035 +0530",
+                     "Lord" : "Saturn",
+                     "ParentLord" : "Venus",
+                     "Start" : "19:42 21/05/2035 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Sun" : {
+                     "DurationHours" : 1276.96280757977,
+                     "DurationText" : "0.1 years",
+                     "End" : "13:31 23/02/2034 +0530",
+                     "Lord" : "Sun",
+                     "ParentLord" : "Venus",
+                     "Start" : "08:33 01/01/2034 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  },
+                  "Venus" : {
+                     "DurationHours" : 4256.54269193256,
+                     "DurationText" : "0.5 years",
+                     "End" : "08:33 01/01/2034 +0530",
+                     "Lord" : "Venus",
+                     "ParentLord" : "Venus",
+                     "Start" : "00:00 08/07/2033 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "VenusPD1",
+         "Type" : "Mahadasa (Main Period)"
+      }
+   },
+   "Status" : "Pass"
 }
