@@ -270,26 +270,26 @@ class Calculator:
 
         # Track all periods from birth to end date
         all_periods = []
-        
+
         # Continue until we pass end date 
         while current_dt < end_dt:
             # Get current period duration
             lord = dasa_sequence[current_lord_index]
-            
+
             # Calculate period duration
             if lord == initial_lord:
                 period_years = initial_years
                 initial_years = dasa_years[lord]  # Reset for next occurrence
             else:
                 period_years = dasa_years[lord]
-                
+
             period_days = period_years * 365.25
             period_end = current_dt + timedelta(days=period_days)
-            
+
             # Only include periods that overlap with requested range
             if period_end > start_dt:
                 all_periods.append((current_dt, period_end, lord))
-                
+
             # Move to next period
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
@@ -301,7 +301,7 @@ class Calculator:
         # Generate output for the found periods
         for period_start, period_end, lord in all_periods:
             years = (period_end - period_start).days / 365.25
-            
+
             # Create period object for overlapping range
             # Calculate exact period using Julian days like C# code
             years_in_days = years * 365.25
@@ -340,39 +340,43 @@ class Calculator:
                 else:
                     duration_text = f"{duration_hours*60:.1f} minutes"
 
-                def calculate_sub_periods(main_lord, total_duration, level=2):
+                def calculate_sub_periods(main_lord, total_duration, start_time, end_time, level=2):
                     if level > levels:
                         return None
 
                     sub_periods = {}
                     remaining_duration = total_duration
                     sub_lord_index = dasa_sequence.index(main_lord)
+                    current_time = start_time
 
-                    while remaining_duration > 0:
+                    while remaining_duration > 0 and current_time < end_time:
                         sub_lord = dasa_sequence[sub_lord_index]
-                        sub_years = (dasa_years[sub_lord] / dasa_years[main_lord]) * (total_duration / 8760)
-                        sub_duration = sub_years * 8760
+                        # Calculate proportion based on main lord's total years
+                        proportion = dasa_years[sub_lord] / sum(dasa_years.values())
+                        sub_duration = total_duration * proportion
+                        period_end = current_time + timedelta(hours=sub_duration)
 
                         if sub_duration < 0.001:
                             break
 
                         sub_period = {
                             'Type': 'Bhukti (Sub Period)' if level == 2 else 'Antaram (Sub-sub Period)' if level == 3 else f'PD{level}',
-                            'Start': start.strftime("%H:%M %d/%m/%Y %z"),
-                            'End': end.strftime("%H:%M %d/%m/%Y %z"),
+                            'Start': current_time.strftime("%H:%M %d/%m/%Y %z"),
+                            'End': period_end.strftime("%H:%M %d/%m/%Y %z"),
                             'DurationHours': sub_duration,
-                            'DurationText': f"{sub_years:.1f} years",
+                            'DurationText': f"{sub_duration/8760:.1f} years",
                             'Lord': sub_lord,
                             'ParentLord': main_lord
                         }
 
                         if levels > level:
-                            sub_sub_periods = calculate_sub_periods(sub_lord, sub_duration, level + 1)
+                            sub_sub_periods = calculate_sub_periods(sub_lord, sub_duration, current_time, period_end, level + 1)
                             if sub_sub_periods:
                                 sub_period['SubDasas'] = sub_sub_periods
 
                         sub_periods[sub_lord] = sub_period
                         remaining_duration -= sub_duration
+                        current_time = period_end
                         sub_lord_index = (sub_lord_index + 1) % len(dasa_sequence)
 
                     return sub_periods
@@ -398,7 +402,7 @@ class Calculator:
 
                 # Calculate sub-periods matching C# implementation
                 if levels > 1:
-                    sub_periods = calculate_sub_periods(lord, duration_hours)
+                    sub_periods = calculate_sub_periods(lord, duration_hours, start, end)
                     if sub_periods:
                         period['SubDasas'] = sub_periods
 
