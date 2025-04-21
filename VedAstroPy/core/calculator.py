@@ -271,17 +271,37 @@ class Calculator:
         # Track all periods from birth to end date
         all_periods = []
 
-        # Continue until we pass end date 
-        while current_dt < end_dt:
-            # Get current period duration
+        # Find the period that contains the start time
+        current_dt = birth_dt
+        current_lord_index = start_lord_index
+        found_start_period = False
+
+        while not found_start_period and current_dt < end_dt:
             lord = dasa_sequence[current_lord_index]
 
-            # Calculate period duration
-            if lord == initial_lord:
+            # Get period duration 
+            if lord == initial_lord and current_dt == birth_dt:
                 period_years = initial_years
-                initial_years = dasa_years[lord]  # Reset for next occurrence
             else:
                 period_years = dasa_years[lord]
+
+            period_days = period_years * 365.25
+            period_end = current_dt + timedelta(days=period_days)
+
+            # Check if this period contains start_dt
+            if period_end > start_dt:
+                found_start_period = True
+                # Keep track of this period
+                all_periods.append((current_dt, period_end, lord))
+
+            if not found_start_period:
+                current_dt = period_end
+                current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
+
+        # Continue calculating remaining periods until end date
+        while current_dt < end_dt:
+            lord = dasa_sequence[current_lord_index]
+            period_years = dasa_years[lord]
 
             period_days = period_years * 365.25
             period_end = current_dt + timedelta(days=period_days)
@@ -293,6 +313,7 @@ class Calculator:
             # Move to next period
             current_dt = period_end
             current_lord_index = (current_lord_index + 1) % len(dasa_sequence)
+
 
         # Reset current time to earliest relevant period
         if all_periods:
