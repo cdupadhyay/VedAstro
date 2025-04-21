@@ -34,6 +34,40 @@
          "TechnicalName" : "KetuPD1",
          "Type" : "Mahadasa (Main Period)"
       },
+      "Mercury" : {
+         "Description" : "Main period of Mercury",
+         "DurationHours" : 92194.4630904278,
+         "DurationText" : "10.5 years",
+         "End" : "00:00 08/07/2026 +0530",
+         "Lord" : "Mercury",
+         "Nature" : "Neutral",
+         "ParentLord" : "",
+         "Start" : "00:00 01/01/2016 +0530",
+         "SubDasas" : {
+            "Mercury" : {
+               "DurationHours" : 92194.4630904278,
+               "DurationText" : "10.5 years",
+               "End" : "00:00 08/07/2026 +0530",
+               "Lord" : "Mercury",
+               "ParentLord" : "Mercury",
+               "Start" : "00:00 01/01/2016 +0530",
+               "SubDasas" : {
+                  "Mercury" : {
+                     "DurationHours" : 92194.4630904278,
+                     "DurationText" : "10.5 years",
+                     "End" : "00:00 08/07/2026 +0530",
+                     "Lord" : "Mercury",
+                     "ParentLord" : "Mercury",
+                     "Start" : "00:00 01/01/2016 +0530",
+                     "Type" : "Antaram (Sub-sub Period)"
+                  }
+               },
+               "Type" : "Bhukti (Sub Period)"
+            }
+         },
+         "TechnicalName" : "MercuryPD1",
+         "Type" : "Mahadasa (Main Period)"
+      },
       "Venus" : {
          "Description" : "Main period of Venus",
          "DurationHours" : 21739.5369095722,
